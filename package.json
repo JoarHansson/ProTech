@@ -1,0 +1,16 @@
+{
+  "name": "protech",
+  "version": "1.0.0",
+  "description": "A repo for the group assignment ProTech",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i src/input.css -o public/style.css",
+    "watch": "tailwindcss -i src/input.css -o public/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.5"
+  }
+}
