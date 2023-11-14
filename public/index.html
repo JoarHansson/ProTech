@@ -12,8 +12,9 @@
     />
     <link href="style.css" rel="stylesheet" />
   </head>
-  <body class="h-full">
-    <div class="starting-screen bg-slate-800 w-full">
+  <body>
+    <!-- starting screen: -->
+    <div class="bg-slate-800 w-full">
       <header class="text-white flex flex-row justify-between py-4 px-8">
         <div class="logo text-4xl">PRO-TECH</div>
         <nav class="flex flex-row text-2xl gap-6">
@@ -46,43 +47,47 @@
         </div>
       </section>
     </div>
-    <div class="cards-screen bg-slate-100 flex flex-col">
-      <div class="card bg-slate-400 m-4 p-4 flex flex-row gap-4">
-        <div class="image w-64 h-64 bg-slate-800"></div>
-        <div class="text-group flex flex-col gap-2">
-          <h3 class="text-4xl font-bold text-white">TRAILBLAZER</h3>
-          <h5 class="text-2xl">Your Ultimate Outdoor Companion</h5>
-          <p class="text-base">
-            Discover a new era of outdoor communication with the TrailBlazer
-            ProPhone, a next-generation rugged smartphone designed to elevate
-            your wilderness adventures.
-          </p>
+    <!-- product screen: -->
+    <section
+      class="bg-slate-800 flex flex-col items-center py-32 -z-20 relative"
+    >
+      <!-- image boxes: -->
+      <div class="flex flex-row justify-around items-center w-full">
+        <div
+          class="w-20 h-20 bg-slate-500 rounded-md text-center shadow-sm shadow-slate-500"
+        >
+          image
+        </div>
+        <div
+          class="bg-black w-[48rem] h-[36rem] origin-top-left rounded-lg skew-x-6 shadow-2xl shadow-slate-950 -mb-20 -ml-24 -z-10"
+        >
+          <img
+            class="m-auto rounded-lg"
+            src="https://images.unsplash.com/photo-1605648916361-9bc12ad6a569?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="placeholder image"
+          />
+        </div>
+        <div
+          class="w-20 h-20 bg-slate-500 rounded-md text-center shadow-sm shadow-slate-500"
+        >
+          image
         </div>
       </div>
-      <div class="card bg-slate-400 m-4 p-4 flex flex-row gap-4">
-        <div class="image w-64 h-64 bg-slate-800"></div>
-        <div class="text-group flex flex-col gap-2">
-          <h3 class="text-4xl font-bold text-white">TRAILBLAZER</h3>
-          <h5 class="text-2xl">Your Ultimate Outdoor Companion</h5>
-          <p class="text-base">
-            Discover a new era of outdoor communication with the TrailBlazer
-            ProPhone, a next-generation rugged smartphone designed to elevate
-            your wilderness adventures.
-          </p>
+
+      <!-- text for procuct -->
+      <div class="flex flex-col justify-center items-start gap-4 w-min p-4">
+        <div class="text-white text-8xl font-bold capitalize tracking-widest">
+          TrailBlazer
+        </div>
+        <div class="text-orange-400 text-4xl font-medium capitalize">
+          Your Ultimate Outdoor Companion
+        </div>
+        <div class="text-white text-2xl font-normal capitalize">
+          Discover a new era of outdoor communication with the TrailBlazer
+          ProPhone, a next-generation rugged smartphone designed to elevate your
+          wilderness adventures.
         </div>
       </div>
-      <div class="card bg-slate-400 m-4 p-4 flex flex-row gap-4">
-        <div class="image w-64 h-64 bg-slate-800"></div>
-        <div class="text-group flex flex-col gap-2">
-          <h3 class="text-4xl font-bold text-white">TRAILBLAZER</h3>
-          <h5 class="text-2xl">Your Ultimate Outdoor Companion</h5>
-          <p class="text-base">
-            Discover a new era of outdoor communication with the TrailBlazer
-            ProPhone, a next-generation rugged smartphone designed to elevate
-            your wilderness adventures.
-          </p>
-        </div>
-      </div>
-    </div>
+    </section>
   </body>
 </html>
