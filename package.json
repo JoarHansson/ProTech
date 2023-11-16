@@ -4,7 +4,7 @@
   "description": "A repo for the group assignment ProTech",
   "main": "index.js",
   "scripts": {
-    "build": "tailwindcss -i src/input.css -o public/style.css",
+    "build": "tailwindcss -i src/input.css -o public/style.css --minify",
     "watch": "tailwindcss -i src/input.css -o public/style.css --watch"
   },
   "keywords": [],
