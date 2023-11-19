@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="h-full">
   <head>
     <meta charset="UTF-8" />
@@ -8,17 +8,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
     <!-- landing page section:  -->
     <section
-      class="bg-cover bg-center bg-[url(https://images.unsplash.com/photo-1595770697318-eeb9e00b06dc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] w-full"
-    >
+      class="w-full bg-[url(https://images.unsplash.com/photo-1595770697318-eeb9e00b06dc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover bg-center">
       <!-- logo and navbar: -->
-      <header class="text-white flex flex-row justify-between py-4 px-8">
+      <header class="flex flex-row justify-between px-8 py-4 text-white">
         <div class="logo text-base capitalize md:text-4xl md:uppercase">
           pro-tech
         </div>
@@ -29,47 +27,43 @@
             width="24"
             height="4"
             viewBox="0 0 24 4"
-            fill="none"
-          >
+            fill="none">
             <path
               d="M2 2H22"
               stroke="white"
               stroke-width="3"
               stroke-linecap="round"
-              stroke-linejoin="round"
-            /></svg
-          ><svg
+              stroke-linejoin="round" />
+          </svg>
+          <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="4"
             viewBox="0 0 24 4"
-            fill="none"
-          >
+            fill="none">
             <path
               d="M2 2H22"
               stroke="white"
               stroke-width="3"
               stroke-linecap="round"
-              stroke-linejoin="round"
-            /></svg
-          ><svg
+              stroke-linejoin="round" />
+          </svg>
+          <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="4"
             viewBox="0 0 24 4"
-            fill="none"
-          >
+            fill="none">
             <path
               d="M2 2H22"
               stroke="white"
               stroke-width="3"
               stroke-linecap="round"
-              stroke-linejoin="round"
-            />
+              stroke-linejoin="round" />
           </svg>
         </nav>
         <!-- medium screens and up - named navbar items: -->
-        <nav class="hidden md:flex md:flex-row md:text-2xl md:gap-6">
+        <nav class="hidden md:flex md:flex-row md:gap-6 md:text-2xl">
           <div class="navbar">DISCOVER</div>
           <div class="navbar">MEMBERS</div>
           <div class="navbar">SHOP</div>
@@ -78,25 +72,22 @@
       </header>
       <!-- hero -->
       <div
-        class="text-6xl text-center p-8 md:text-left md:text-8xl md:p-36 flex flex-col gap-6"
-      >
+        class="flex flex-col gap-6 p-8 text-center text-6xl md:p-36 md:text-left md:text-8xl">
         <div class="h1-container font-bold">
           <h1 class="text-white">NEXT-GEN</h1>
           <h1 class="text-gray-700">HIKING</h1>
           <h1 class="text-white">ADVENTURES</h1>
         </div>
-        <h5 class="text-base md:text-2xl text-white">
+        <h5 class="text-base text-white md:text-2xl">
           Discover the next-gen hiking gear from Pro-Tech
         </h5>
         <div class="buttons text-2xl md:text-4xl">
           <button
-            class="border-2 rounded-md py-2 px-4 text-white bg-gray-700 hover:scale-105"
-          >
+            class="rounded-md border-2 bg-gray-700 px-4 py-2 text-white hover:scale-105">
             JOIN ADVENTURE
           </button>
           <button
-            class="border-2 border-gray-700 text-gray-700 bg-white rounded-md py-2 px-4 ml-2 hover:scale-105"
-          >
+            class="ml-2 rounded-md border-2 border-gray-700 bg-white px-4 py-2 text-gray-700 hover:scale-105">
             LEARN MORE
           </button>
         </div>
@@ -104,57 +95,46 @@
     </section>
     <!-- product section: -->
     <section
-      class="bg-slate-800 flex flex-col gap-8 px-8 items-start md:px-0 md:items-center py-32 -z-20 relative"
-    >
+      class="relative -z-20 flex flex-col items-start gap-8 bg-slate-800 px-8 py-32 md:items-center md:px-0">
       <!-- image boxes: -->
-      <div class="flex flex-row justify-around items-center w-full">
+      <div class="flex w-full flex-row items-center justify-around">
         <div
-          class="hidden md:flex w-20 h-20 bg-slate-500 rounded-md text-center shadow-sm shadow-slate-500"
-        >
+          class="hidden h-20 w-20 rounded-md bg-slate-500 text-center shadow-sm shadow-slate-500 md:flex">
           image
         </div>
         <div
-          class="bg-black md:hidden lg:visible w-full h-auto rounded-lg -z-10"
-        >
+          class="-z-10 h-auto w-full rounded-lg bg-black md:hidden lg:visible">
           <img
             class="m-auto rounded-lg"
             src="https://images.unsplash.com/photo-1605648916361-9bc12ad6a569?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="placeholder image"
-          />
+            alt="placeholder image" />
         </div>
         <div
-          class="hidden md:flex bg-black w-[48rem] h-[36rem] origin-top-left rounded-lg skew-x-6 shadow-2xl shadow-slate-950 -mb-20 -ml-24 -z-10"
-        >
+          class="-z-10 -mb-20 -ml-24 hidden h-[36rem] w-[48rem] origin-top-left skew-x-6 rounded-lg bg-black shadow-2xl shadow-slate-950 md:flex">
           <img
             class="m-auto rounded-lg"
             src="https://images.unsplash.com/photo-1605648916361-9bc12ad6a569?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="placeholder image"
-          />
+            alt="placeholder image" />
         </div>
         <div
-          class="hidden md:flex w-20 h-20 bg-slate-500 rounded-md text-center shadow-sm shadow-slate-500"
-        >
+          class="hidden h-20 w-20 rounded-md bg-slate-500 text-center shadow-sm shadow-slate-500 md:flex">
           image
         </div>
       </div>
 
       <!-- text for procuct -->
       <div
-        class="flex flex-col justify-start md:justify-center items-start gap-4 w-fill md:w-min md:p-4"
-      >
+        class="w-fill flex flex-col items-start justify-start gap-4 md:w-min md:justify-center md:p-4">
         <div
-          class="text-white text-4xl md:text-8xl font-bold capitalize tracking-widest"
-        >
+          class="text-4xl font-bold capitalize tracking-widest text-white md:text-8xl">
           TrailBlazer
         </div>
         <div
-          class="text-orange-400 text-2xl font-normal md:text-4xl md:font-medium capitalize"
-        >
+          class="text-2xl font-normal capitalize text-orange-400 md:text-4xl md:font-medium">
           Your Ultimate Outdoor Companion
         </div>
         <div
-          class="text-white text-base font-normal md:text-2xl md:font-normal capitalize"
-        >
+          class="text-base font-normal capitalize text-white md:text-2xl md:font-normal">
           Discover a new era of outdoor communication with the TrailBlazer
           ProPhone, a next-generation rugged smartphone designed to elevate your
           wilderness adventures.
@@ -164,24 +144,24 @@
 
     <!-- testimonials section: -->
     <section class="my-16">
-      <div class="text-black text-4xl font-bold uppercase text-center">
+      <div class="text-center text-4xl font-bold uppercase text-black">
         testimonials
       </div>
-      <div class="text-black text-4xl font-bold uppercase text-center">
+      <div class="text-center text-4xl font-bold uppercase text-black">
         * * * * *
       </div>
     </section>
     <!-- backstory section: -->
-    <section class="bg-slate-800 flex flex-row justify-between px-16 py-32">
-      <div class="flex flex-col items-start gap-6 max-w-lg">
-        <div class="text-4xl md:text-6xl font-bold flex justify-start">
+    <section class="flex flex-row justify-between bg-slate-800 px-16 py-32">
+      <div class="flex max-w-lg flex-col items-start gap-6">
+        <div class="flex justify-start text-4xl font-bold md:text-6xl">
           <h2 class="text-black">Pro</h2>
           <h2 class="text-white">-Tech</h2>
         </div>
-        <div class="text-gray-400 text-2xl md:text-4xl font-medium capitalize">
+        <div class="text-2xl font-medium capitalize text-gray-400 md:text-4xl">
           Allow us to share the journey of how we came to be
         </div>
-        <div class="text-white text-base md:text-2xl font-normal">
+        <div class="text-base font-normal text-white md:text-2xl">
           In the scenic city of Gothenburg, Sweden, Protech emerged as a
           visionary company dedicated to enhancing the outdoor experience.
           Founded by outdoor enthusiasts, their mission was to create
@@ -195,56 +175,69 @@
           more enjoyable worldwide.
         </div>
       </div>
-      <div class="hidden md:flex flex-col gap-8">
-        <div class="w-72 h-52 bg-slate-100"></div>
-        <div class="w-72 h-52 bg-slate-100"></div>
-        <div class="w-72 h-52 bg-slate-100"></div>
+      <div class="hidden flex-col gap-8 md:flex">
+        <div class="h-52 w-72 bg-slate-100"></div>
+        <div class="h-52 w-72 bg-slate-100"></div>
+        <div class="h-52 w-72 bg-slate-100"></div>
       </div>
     </section>
     <!-- Footer page -->
     <section class="bg-slate-800">
       <!-- Last call text/button -->
-      <div class="flex flex-col gap-12 items-center">
+      <div class="flex flex-col items-center gap-12">
         <div
-          class="text-orange-400 text-4xl md:text-6xl font-bold tracking-wider capitalize leading-[93.24px]"
-        >
+          class="text-4xl font-bold capitalize leading-[93.24px] tracking-wider text-orange-400 md:text-6xl">
           Seize the adventure
         </div>
         <div
-          class="text-white text-base md:text-2xl text-center font-normal capitalize max-w-md"
-        >
+          class="max-w-md text-center text-base font-normal capitalize text-white md:text-2xl">
           this is your last call to elevate your outdoor experience with
           cutting-edge gear. Don't miss out; embark on a journey with us today!
         </div>
       </div>
-      <div class="button text-2xl text-center my-20">
-        <button class="border-2 rounded-md py-2 px-4 text-white">
+      <div class="button my-20 text-center text-2xl">
+        <button class="rounded-md border-2 px-4 py-2 text-white">
           JOIN ADVENTURE
         </button>
       </div>
       <!-- Footer text -->
-      <footer class="flex flex-row justify-between w-full my-52 h-36 bg-neutral-950 px-6 py-3 bg-opacity-40">
+      <footer
+        class="my-52 flex h-36 w-full flex-row justify-between bg-neutral-950 bg-opacity-40 px-6 py-3">
         <div>
-          <span class="text-white text-3xl font-bold uppercase leading-[43.20px] tracking-wider">PRO-</span>
-          <span class="text-neutral-500 text-3xl font-bold font-['IBM Plex Mono'] uppercase leading-[43.20px] tracking-wider">TECH</span>
-          <div class="text-white leading-tight font-light tracking-wider my-8">Copyright © </br> 2023</div>
+          <span
+            class="text-3xl font-bold uppercase leading-[43.20px] tracking-wider text-white"
+            >PRO-</span
+          >
+          <span
+            class="font-['IBM Plex Mono'] text-3xl font-bold uppercase leading-[43.20px] tracking-wider text-neutral-500"
+            >TECH</span
+          >
+          <div class="my-8 font-light leading-tight tracking-wider text-white">
+            Copyright © <br />
+            2023
+          </div>
         </div>
         <div class="flex flex-col gap-2 tracking-wider">
-          <div class="text-white font-bold uppercase">Contact us</div>
-          <div class="text-white font-light">protech@protech.com</div>
-          <div class="text-white font-light">+46347865993</div>
+          <div class="font-bold uppercase text-white">Contact us</div>
+          <div class="font-light text-white">protech@protech.com</div>
+          <div class="font-light text-white">+46347865993</div>
         </div>
         <div class="flex flex-col gap-1 tracking-wider">
-          <div class="text-white font-bold uppercase">Social</div>
-          <a href="#" class="text-white uppercase font-light">Facebook</a>
-          <a href="#" class="text-white uppercase font-light">Instagram</a>
-          <a href="#" class="text-white uppercase font-light">Youtube</a>
+          <div class="font-bold uppercase text-white">Social</div>
+          <a href="#" class="font-light uppercase text-white">Facebook</a>
+          <a href="#" class="font-light uppercase text-white">Instagram</a>
+          <a href="#" class="font-light uppercase text-white">Youtube</a>
         </div>
         <div class="flex flex-col tracking-wider">
-          <div class="text-white font-bold uppercase">Address</div>
-          <div class="text-white font-light">Protech Headquarters </br> Wilderness Way 123 </br> Adventureland, Outdooria 54321 </br> Nature Haven</div>
+          <div class="font-bold uppercase text-white">Address</div>
+          <div class="font-light text-white">
+            Protech Headquarters <br />
+            Wilderness Way 123 <br />
+            Adventureland, Outdooria 54321 <br />
+            Nature Haven
+          </div>
         </div>
-    </footer>
-  </section>
+      </footer>
+    </section>
   </body>
 </html>
