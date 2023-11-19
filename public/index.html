@@ -19,8 +19,57 @@
     >
       <!-- logo and navbar: -->
       <header class="text-white flex flex-row justify-between py-4 px-8">
-        <div class="logo text-4xl">PRO-TECH</div>
-        <nav class="flex flex-row text-2xl gap-6">
+        <div class="logo text-base capitalize md:text-4xl md:uppercase">
+          pro-tech
+        </div>
+        <!-- small screens, hamburger menu: -->
+        <nav class="flex flex-col justify-center gap-1 md:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="4"
+            viewBox="0 0 24 4"
+            fill="none"
+          >
+            <path
+              d="M2 2H22"
+              stroke="white"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            /></svg
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="4"
+            viewBox="0 0 24 4"
+            fill="none"
+          >
+            <path
+              d="M2 2H22"
+              stroke="white"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            /></svg
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="4"
+            viewBox="0 0 24 4"
+            fill="none"
+          >
+            <path
+              d="M2 2H22"
+              stroke="white"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </nav>
+        <!-- medium screens and up - named navbar items: -->
+        <nav class="hidden md:flex md:flex-row md:text-2xl md:gap-6">
           <div class="navbar">DISCOVER</div>
           <div class="navbar">MEMBERS</div>
           <div class="navbar">SHOP</div>
@@ -28,16 +77,18 @@
         </nav>
       </header>
       <!-- hero -->
-      <div class="hero text-8xl p-36 flex flex-col gap-6">
+      <div
+        class="text-6xl text-center p-8 md:text-left md:text-8xl md:p-36 flex flex-col gap-6"
+      >
         <div class="h1-container font-bold">
           <h1 class="text-white">NEXT-GEN</h1>
           <h1 class="text-gray-700">HIKING</h1>
           <h1 class="text-white">ADVENTURES</h1>
         </div>
-        <h5 class="text-2xl text-white">
+        <h5 class="text-base md:text-2xl text-white">
           Discover the next-gen hiking gear from Pro-Tech
         </h5>
-        <div class="buttons text-4xl">
+        <div class="buttons text-2xl md:text-4xl">
           <button
             class="border-2 rounded-md py-2 px-4 text-white bg-gray-700 hover:scale-105"
           >
@@ -53,17 +104,17 @@
     </section>
     <!-- product section: -->
     <section
-      class="bg-slate-800 flex flex-col items-center py-32 -z-20 relative"
+      class="bg-slate-800 flex flex-col gap-8 px-8 items-start md:px-0 md:items-center py-32 -z-20 relative"
     >
       <!-- image boxes: -->
       <div class="flex flex-row justify-around items-center w-full">
         <div
-          class="w-20 h-20 bg-slate-500 rounded-md text-center shadow-sm shadow-slate-500"
+          class="hidden md:flex w-20 h-20 bg-slate-500 rounded-md text-center shadow-sm shadow-slate-500"
         >
           image
         </div>
         <div
-          class="bg-black w-[48rem] h-[36rem] origin-top-left rounded-lg skew-x-6 shadow-2xl shadow-slate-950 -mb-20 -ml-24 -z-10"
+          class="bg-black md:hidden lg:visible w-full h-auto rounded-lg -z-10"
         >
           <img
             class="m-auto rounded-lg"
@@ -72,21 +123,38 @@
           />
         </div>
         <div
-          class="w-20 h-20 bg-slate-500 rounded-md text-center shadow-sm shadow-slate-500"
+          class="hidden md:flex bg-black w-[48rem] h-[36rem] origin-top-left rounded-lg skew-x-6 shadow-2xl shadow-slate-950 -mb-20 -ml-24 -z-10"
+        >
+          <img
+            class="m-auto rounded-lg"
+            src="https://images.unsplash.com/photo-1605648916361-9bc12ad6a569?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="placeholder image"
+          />
+        </div>
+        <div
+          class="hidden md:flex w-20 h-20 bg-slate-500 rounded-md text-center shadow-sm shadow-slate-500"
         >
           image
         </div>
       </div>
 
       <!-- text for procuct -->
-      <div class="flex flex-col justify-center items-start gap-4 w-min p-4">
-        <div class="text-white text-8xl font-bold capitalize tracking-widest">
+      <div
+        class="flex flex-col justify-start md:justify-center items-start gap-4 w-fill md:w-min md:p-4"
+      >
+        <div
+          class="text-white text-4xl md:text-8xl font-bold capitalize tracking-widest"
+        >
           TrailBlazer
         </div>
-        <div class="text-orange-400 text-4xl font-medium capitalize">
+        <div
+          class="text-orange-400 text-2xl font-normal md:text-4xl md:font-medium capitalize"
+        >
           Your Ultimate Outdoor Companion
         </div>
-        <div class="text-white text-2xl font-normal capitalize">
+        <div
+          class="text-white text-base font-normal md:text-2xl md:font-normal capitalize"
+        >
           Discover a new era of outdoor communication with the TrailBlazer
           ProPhone, a next-generation rugged smartphone designed to elevate your
           wilderness adventures.
@@ -106,14 +174,14 @@
     <!-- backstory section: -->
     <section class="bg-slate-800 flex flex-row justify-between px-16 py-32">
       <div class="flex flex-col items-start gap-6 max-w-lg">
-        <div class="text-6xl font-bold flex justify-start">
+        <div class="text-4xl md:text-6xl font-bold flex justify-start">
           <h2 class="text-black">Pro</h2>
           <h2 class="text-white">-Tech</h2>
         </div>
-        <div class="text-gray-400 text-4xl font-medium capitalize">
+        <div class="text-gray-400 text-2xl md:text-4xl font-medium capitalize">
           Allow us to share the journey of how we came to be
         </div>
-        <div class="text-white text-2xl font-normal font">
+        <div class="text-white text-base md:text-2xl font-normal">
           In the scenic city of Gothenburg, Sweden, Protech emerged as a
           visionary company dedicated to enhancing the outdoor experience.
           Founded by outdoor enthusiasts, their mission was to create
@@ -127,7 +195,7 @@
           more enjoyable worldwide.
         </div>
       </div>
-      <div class="flex flex-col gap-8">
+      <div class="hidden md:flex flex-col gap-8">
         <div class="w-72 h-52 bg-slate-100"></div>
         <div class="w-72 h-52 bg-slate-100"></div>
         <div class="w-72 h-52 bg-slate-100"></div>
@@ -138,12 +206,12 @@
       <!-- Last call text/button -->
       <div class="flex flex-col gap-12 items-center">
         <div
-          class="text-orange-400 text-6xl font-bold tracking-wider capitalize leading-[93.24px]"
+          class="text-orange-400 text-4xl md:text-6xl font-bold tracking-wider capitalize leading-[93.24px]"
         >
           Seize the adventure
         </div>
         <div
-          class="text-white text-2xl text-center font-normal capitalize max-w-md"
+          class="text-white text-base md:text-2xl text-center font-normal capitalize max-w-md"
         >
           this is your last call to elevate your outdoor experience with
           cutting-edge gear. Don't miss out; embark on a journey with us today!
