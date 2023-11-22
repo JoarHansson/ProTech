@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="h-full">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,21 +7,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@200;300;400;500;600;700&display=swap"
       rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
   </head>
-  <body>
+  <body class="bg-gradient-to-b from-gray-950 via-teal-950 to-stone-500">
     <!-- landing page section:  -->
     <section
-      class="w-full bg-[url(https://images.unsplash.com/photo-1595770697318-eeb9e00b06dc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover bg-center">
+      class="w-full bg-[url('../assets/herobild-mobil.png')] bg-cover bg-center">
       <!-- logo and navbar: -->
-      <header class="flex flex-row justify-between px-8 py-4 text-white">
-        <div class="logo text-base capitalize md:text-4xl md:uppercase">
-          pro-tech
+      <header class="flex flex-row justify-between px-4 pt-8 text-white">
+        <div class="justify-left flex flex-row items-center gap-4">
+          <img src="../assets/logo-PT-white.png" alt="Pro-Tech logo text" />
+          <img src="../assets/logo-bear-white.png" alt="Pro-Tech logo bear" />
         </div>
+
         <!-- small screens, hamburger menu: -->
-        <nav class="flex flex-col justify-center gap-1 md:hidden">
+        <!-- TODO: change to image link in assets -->
+        <nav
+          id="hamburger-menu"
+          class="flex flex-col justify-center gap-1 md:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -72,30 +78,37 @@
       </header>
       <!-- hero -->
       <div
-        class="flex flex-col gap-6 p-8 text-center text-6xl md:p-36 md:text-left md:text-8xl">
-        <div class="h1-container font-bold">
-          <h1 class="text-white">NEXT-GEN</h1>
-          <h1 class="text-gray-700">HIKING</h1>
-          <h1 class="text-white">ADVENTURES</h1>
+        class="flex flex-col items-start gap-2 px-4 pb-52 pt-36 md:p-36 md:text-left md:text-8xl">
+        <div
+          class="flex flex-col gap-2 text-5xl font-bold uppercase leading-normal tracking-wide">
+          <h1 class="text-white">Teknik för ditt</h1>
+          <h1 class="text-orange-400">Nästa äventyr</h1>
+          <h1 class="text-white">I naturen</h1>
         </div>
-        <h5 class="text-base text-white md:text-2xl">
-          Discover the next-gen hiking gear from Pro-Tech
+        <h5
+          class="font-IBM text-left text-base font-normal capitalize leading-tight text-white md:text-2xl">
+          Anslut till vår äventyrscommunity och få exklusiva erbjudanden för din
+          nästa friluftsutflykt! Skriv in din e-post för att börja upptäcka
         </h5>
-        <div class="buttons text-2xl md:text-4xl">
+        <button
+          id="button-join-community"
+          class="font-IBM mx-auto mt-4 rounded-md bg-white px-4 py-2 text-2xl font-medium uppercase text-black md:text-4xl">
+          Gå med i community
+        </button>
+        <div class="mx-auto flex flex-row justify-center gap-2">
+          <img src="../assets/icon-globe.png" alt="" />
           <button
-            class="rounded-md border-2 bg-gray-700 px-4 py-2 text-white hover:scale-105">
-            JOIN ADVENTURE
+            id="button-switch-language"
+            class="font-IBM text-base font-semibold uppercase leading-snug tracking-wide text-white">
+            SWE
           </button>
-          <button
-            class="ml-2 rounded-md border-2 border-gray-700 bg-white px-4 py-2 text-gray-700 hover:scale-105">
-            LEARN MORE
-          </button>
+          <img src="../assets/icon_sharp-arrow-drop-down-white.png" alt="" />
         </div>
       </div>
     </section>
     <!-- product section: -->
     <section
-      class="relative -z-20 flex flex-col items-start gap-8 bg-slate-800 px-8 py-32 md:items-center md:px-0">
+      class="relative -z-20 flex flex-col items-start gap-8 px-8 py-32 md:items-center md:px-0">
       <!-- image boxes: -->
       <div class="flex w-full flex-row items-center justify-around">
         <div
@@ -152,7 +165,7 @@
       </div>
     </section>
     <!-- backstory section: -->
-    <section class="flex flex-row justify-between bg-slate-800 px-16 py-32">
+    <section class="flex flex-row justify-between px-16 py-32">
       <div class="flex max-w-lg flex-col items-start gap-6">
         <div class="flex justify-start text-4xl font-bold md:text-6xl">
           <h2 class="text-black">Pro</h2>
@@ -182,7 +195,7 @@
       </div>
     </section>
     <!-- Footer page -->
-    <section class="bg-slate-800">
+    <section>
       <!-- Last call text/button -->
       <div class="flex flex-col items-center gap-12">
         <div
@@ -211,6 +224,14 @@
         class="my-52 flex h-36 w-full flex-row justify-between bg-neutral-950 bg-opacity-40 px-6 py-3">
         <div>
           <span
+            class="text-3xl font-bold uppercase leading-[43.20px] tracking-wider text-white">
+            PRO-
+          </span>
+          <span
+            class="font-['IBM Plex Mono'] text-3xl font-bold uppercase leading-[43.20px] tracking-wider text-neutral-500">
+            TECH
+          </span>
+          <div class="my-8 font-light leading-tight tracking-wider text-white">
             class="hidden md:text-3xl md:font-bold md:uppercase md:leading-[43.20px] md:tracking-wider md:text-white"
             >PRO-</span
           >

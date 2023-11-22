@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Oswald"],
+        IBM: ["IBM Plex Mono"],
       },
     },
   },
