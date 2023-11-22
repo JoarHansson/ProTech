@@ -36,18 +36,32 @@ const logoBear = document.querySelector("#logo-bear");
 
 buttonMenu.addEventListener("click", (event) => {
   if (event.target.src.includes("assets/icon-hamburger-menu.png")) {
+    // change icon and logo colors
     event.target.src = "../assets/icon-X-black.png";
-
     logoProTech.src = "../assets/logo-PT-black.png";
     logoBear.src = "../assets/logo-bear-black.png";
 
-    const menuItems = ["Discover", "Members", "Shop", "Cart"];
+    // disable scrolling of the background
+    document.body.classList.add("overflow-hidden");
+
+    // create drop-down menu
+    header.classList.add(
+      "bg-white",
+      "fixed",
+      "top-0",
+      "right-0",
+      "bottom-0",
+      "left-0",
+      "z-50",
+      "overflow-y-auto",
+    );
 
     const list = document.createElement("ul");
     list.classList.add("mt-10");
-    header.classList.add("pb-64");
-    header.classList.add("bg-white");
 
+    const menuItems = ["Upptäck", "Medlem", "Butik", "Kontakt"];
+
+    // populate drop-down menu
     menuItems.forEach((item) => {
       const listItem = document.createElement("li");
       const containerTextAndIcon = document.createElement("div");
@@ -55,7 +69,7 @@ buttonMenu.addEventListener("click", (event) => {
       const listItemIconArrow = document.createElement("img");
       const lineBelowText = document.createElement("div");
 
-      // heirarchy:
+      // heirarchy of elements:
       // listItem
       // -- containerTextAndIcon
       // ---- listItemText
@@ -63,26 +77,22 @@ buttonMenu.addEventListener("click", (event) => {
       // -- lineBelowText
 
       listItemText.textContent = item;
-      listItemText.classList.add("text-black");
-      listItemText.classList.add("text-2xl");
-      listItemText.classList.add("font-normal");
+      listItemText.classList.add("text-black", "text-2xl", "font-normal");
+
+      listItemIconArrow.src = "../assets/icon_sharp-arrow-right-black.png";
+
       containerTextAndIcon.appendChild(listItemText);
-
-      listItemIconArrow.src = "../assets/icon_sharp-arrow-drop-down-black.png";
       containerTextAndIcon.appendChild(listItemIconArrow);
+      containerTextAndIcon.classList.add(
+        "flex",
+        "justify-between",
+        "items-center",
+      );
 
-      containerTextAndIcon.classList.add("flex");
-      containerTextAndIcon.classList.add("justify-between");
-      containerTextAndIcon.classList.add("items-center");
+      lineBelowText.classList.add("bg-black", "h-[1px]", "w-full");
 
       listItem.appendChild(containerTextAndIcon);
-
-      lineBelowText.classList.add("bg-black");
-      lineBelowText.classList.add("h-[1px]");
-      lineBelowText.classList.add("w-full");
-
       listItem.appendChild(lineBelowText);
-
       listItem.classList.add("mt-16");
 
       list.appendChild(listItem);
@@ -90,13 +100,25 @@ buttonMenu.addEventListener("click", (event) => {
 
     header.appendChild(list);
   } else if (event.target.src.includes("assets/icon-X-black.png")) {
+    // change icon and logo colors
     event.target.src = "../assets/icon-hamburger-menu.png";
-
     logoProTech.src = "../assets/logo-PT-white.png";
     logoBear.src = "../assets/logo-bear-white.png";
 
-    header.classList.remove("pb-64");
-    header.classList.remove("bg-white");
+    // enable scrolling again
+    document.body.classList.remove("overflow-hidden");
+
+    // remove drop-down menu
+    header.classList.remove(
+      "bg-white",
+      "fixed",
+      "top-0",
+      "right-0",
+      "bottom-0",
+      "left-0",
+      "z-50",
+      "overflow-y-auto",
+    );
 
     header.removeChild(header.lastElementChild);
   }
