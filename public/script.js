@@ -27,3 +27,6 @@ buttonJoinCommunity.addEventListener("click", () => {
     buttonJoinCommunity.classList.add("text-black");
   }
 });
+
+// display drop-down menu
+const hamburgerMenu = document.querySelector("#hamburger-menu");
