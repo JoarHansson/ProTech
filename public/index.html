@@ -17,57 +17,17 @@
     <section
       class="w-full bg-[url('../assets/herobild-mobil.png')] bg-cover bg-center">
       <!-- logo and navbar: -->
-      <header class="flex flex-row justify-between px-4 pt-8 text-white">
+      <header class=" px-4 pt-8" >
+        <div class="flex flex-row justify-between text-white">
         <div class="justify-left flex flex-row items-center gap-4">
-          <img src="../assets/logo-PT-white.png" alt="Pro-Tech logo text" />
-          <img src="../assets/logo-bear-white.png" alt="Pro-Tech logo bear" />
+          <img id="logo-pro-tech" src="../assets/logo-PT-white.png" alt="Pro-Tech logo text" />
+          <img id="logo-bear"src="../assets/logo-bear-white.png" alt="Pro-Tech logo bear" />
         </div>
 
         <!-- small screens, hamburger menu: -->
-        <!-- TODO: change to image link in assets -->
-        <nav
-          id="hamburger-menu"
-          class="flex flex-col justify-center gap-1 md:hidden">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="4"
-            viewBox="0 0 24 4"
-            fill="none">
-            <path
-              d="M2 2H22"
-              stroke="white"
-              stroke-width="3"
-              stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="4"
-            viewBox="0 0 24 4"
-            fill="none">
-            <path
-              d="M2 2H22"
-              stroke="white"
-              stroke-width="3"
-              stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="4"
-            viewBox="0 0 24 4"
-            fill="none">
-            <path
-              d="M2 2H22"
-              stroke="white"
-              stroke-width="3"
-              stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
-        </nav>
+        <button class="md:hidden" >
+          <img id="button-menu" src="../assets/icon-hamburger-menu.png" />
+        </button>
         <!-- medium screens and up - named navbar items: -->
         <nav class="hidden md:flex md:flex-row md:gap-6 md:text-2xl">
           <div class="navbar">DISCOVER</div>
@@ -75,6 +35,7 @@
           <div class="navbar">SHOP</div>
           <div class="navbar">CART</div>
         </nav>
+      </div>
       </header>
       <!-- hero -->
       <div
