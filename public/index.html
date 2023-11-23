@@ -12,30 +12,36 @@
     <link href="style.css" rel="stylesheet" />
     <script src="script.js" defer></script>
   </head>
-  <body class="bg-gradient-to-b from-gray-950 via-teal-950 to-stone-500">
+  <body>
     <!-- landing page section:  -->
     <section
       class="w-full bg-[url('../assets/herobild-mobil.png')] bg-cover bg-center">
       <!-- logo and navbar: -->
-      <header class=" px-4 pt-8" >
+      <header class="px-4 pt-8">
         <div class="flex flex-row justify-between text-white">
-        <div class="justify-left flex flex-row items-center gap-4">
-          <img id="logo-pro-tech" src="../assets/logo-PT-white.png" alt="Pro-Tech logo text" />
-          <img id="logo-bear"src="../assets/logo-bear-white.png" alt="Pro-Tech logo bear" />
-        </div>
+          <div class="justify-left flex flex-row items-center gap-4">
+            <img
+              id="logo-pro-tech"
+              src="../assets/logo-PT-white.png"
+              alt="Pro-Tech logo text" />
+            <img
+              id="logo-bear"
+              src="../assets/logo-bear-white.png"
+              alt="Pro-Tech logo bear" />
+          </div>
 
-        <!-- small screens, hamburger menu: -->
-        <button class="md:hidden" >
-          <img id="button-menu" src="../assets/icon-hamburger-menu.png" />
-        </button>
-        <!-- medium screens and up - named navbar items: -->
-        <nav class="hidden md:flex md:flex-row md:gap-6 md:text-2xl">
-          <div class="navbar">DISCOVER</div>
-          <div class="navbar">MEMBERS</div>
-          <div class="navbar">SHOP</div>
-          <div class="navbar">CART</div>
-        </nav>
-      </div>
+          <!-- small screens, hamburger menu: -->
+          <button class="md:hidden">
+            <img id="button-menu" src="../assets/icon-hamburger-menu.png" />
+          </button>
+          <!-- medium screens and up - named navbar items: -->
+          <nav class="hidden md:flex md:flex-row md:gap-6 md:text-2xl">
+            <div class="navbar">DISCOVER</div>
+            <div class="navbar">MEMBERS</div>
+            <div class="navbar">SHOP</div>
+            <div class="navbar">CART</div>
+          </nav>
+        </div>
       </header>
       <!-- hero -->
       <div
@@ -43,17 +49,17 @@
         <div
           class="flex flex-col gap-2 text-5xl font-bold uppercase leading-normal tracking-wide">
           <h1 class="text-white">Teknik för ditt</h1>
-          <h1 class="text-orange-400">Nästa äventyr</h1>
+          <h1 class="text-proTechOrange">Nästa äventyr</h1>
           <h1 class="text-white">I naturen</h1>
         </div>
         <h5
-          class="font-IBM text-left text-base font-normal capitalize leading-tight text-white md:text-2xl">
+          class="text-left font-IBM text-base font-normal capitalize leading-tight text-white md:text-2xl">
           Anslut till vår äventyrscommunity och få exklusiva erbjudanden för din
           nästa friluftsutflykt! Skriv in din e-post för att börja upptäcka
         </h5>
         <button
           id="button-join-community"
-          class="font-IBM mx-auto mt-4 rounded-md bg-white px-4 py-2 text-2xl font-medium uppercase text-black md:text-4xl">
+          class="mx-auto mt-4 rounded-md bg-white px-4 py-2 font-IBM text-2xl font-medium uppercase text-black md:text-4xl">
           Gå med i community
         </button>
         <div class="mx-auto flex flex-row justify-center gap-2">
@@ -67,54 +73,199 @@
         </div>
       </div>
     </section>
-    <!-- product section: -->
-    <section
-      class="relative -z-20 flex flex-col items-start gap-8 px-8 py-32 md:items-center md:px-0">
-      <!-- image boxes: -->
-      <div class="flex w-full flex-row items-center justify-around">
-        <div
-          class="hidden h-20 w-20 rounded-md bg-slate-500 text-center shadow-sm shadow-slate-500 md:flex">
-          image
-        </div>
-        <div
-          class="-z-10 h-auto w-full rounded-lg bg-black md:hidden lg:visible">
-          <img
-            class="m-auto rounded-lg"
-            src="https://images.unsplash.com/photo-1605648916361-9bc12ad6a569?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="placeholder image" />
-        </div>
-        <div
-          class="-z-10 -mb-20 -ml-24 hidden h-[36rem] w-[48rem] origin-top-left skew-x-6 rounded-lg bg-black shadow-2xl shadow-slate-950 md:flex">
-          <img
-            class="m-auto rounded-lg"
-            src="https://images.unsplash.com/photo-1605648916361-9bc12ad6a569?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="placeholder image" />
-        </div>
-        <div
-          class="hidden h-20 w-20 rounded-md bg-slate-500 text-center shadow-sm shadow-slate-500 md:flex">
-          image
-        </div>
-      </div>
 
-      <!-- text for procuct -->
-      <div
-        class="w-fill flex flex-col items-start justify-start gap-4 md:w-min md:justify-center md:p-4">
+    <!-- collection section: -->
+    <main class="bg-gradient-to-b from-gray-950 via-teal-950 to-stone-500">
+      <section
+        class="flex flex-col items-start gap-8 px-8 py-24 md:items-center md:px-0">
+        <!-- image boxes: -->
+        <img src="../assets/kollektionen.png" alt="collection" />
+
+        <!-- text for colletion -->
         <div
-          class="text-4xl font-bold capitalize tracking-widest text-white md:text-8xl">
-          TrailBlazer
+          class="w-fill flex flex-col items-start justify-start gap-4 md:w-min md:justify-center md:p-4">
+          <div class="flex flex-row gap-8">
+            <div
+              class="text-4xl font-bold capitalize leading-10 tracking-wide text-white md:text-8xl">
+              kollektionen
+            </div>
+            <img
+              src="../assets/logo-bear-orange.png"
+              alt="Pro-Tech logo orange" />
+          </div>
+          <div
+            class="text-proTechOrange font-IBM text-2xl font-medium capitalize md:text-4xl md:font-medium">
+            Futuristisk & Modern
+          </div>
+          <div
+            class="font-IBM text-base font-normal leading-tight text-white md:text-2xl md:font-normal">
+            Ta friluftsupplevelsen till nya höjder med avancerade funktioner.
+            Inkluderat är ett kraftfullt batteripack för längre äventyr, en
+            nätverksutökare för pålitlig anslutning var du än är och en
+            innovativ eldstad som inte bara ger värme och möjlighet att laga mat
+            utan också genererar el när du eldar. Utforska det bästa inom
+            friluftsteknik för en komplett och bekväm utomhusupplevelse!
+          </div>
         </div>
+      </section>
+
+      <!-- product section: -->
+      <section
+        class="flex flex-col items-start gap-8 px-8 py-24 md:items-center md:px-0">
+        <!-- image boxes: -->
+        <img src="../assets/bear-temp.png" alt="Product" />
+
+        <!-- text for procuct -->
         <div
-          class="text-2xl font-normal capitalize text-orange-400 md:text-4xl md:font-medium">
-          Your Ultimate Outdoor Companion
+          class="w-fill flex flex-col items-start justify-start gap-4 md:w-min md:justify-center md:p-4">
+          <div
+            class="text-4xl font-bold capitalize leading-10 tracking-wide text-white md:text-8xl">
+            Trailblazer
+          </div>
+          <div
+            class="text-proTechOrange font-IBM text-2xl font-medium capitalize md:text-4xl md:font-medium">
+            Din Campingkompanjon
+          </div>
+          <div
+            class="font-IBM text-base font-normal leading-tight text-white md:text-2xl md:font-normal">
+            Upptäck en ny era av utomhuskommunikation med TrailBlazer ProPhone,
+            en nästa generations robusta smartphone designad för att lyfta dina
+            vildmarksäventyr.
+          </div>
         </div>
+      </section>
+
+      <!-- testimonials section: -->
+      <section class="mx-8 my-16">
         <div
-          class="text-base font-normal capitalize text-white md:text-2xl md:font-normal">
-          Discover a new era of outdoor communication with the TrailBlazer
-          ProPhone, a next-generation rugged smartphone designed to elevate your
-          wilderness adventures.
+          class="text-proTechOrange mb-8 text-center font-IBM text-2xl font-medium capitalize leading-8">
+          Recensioner Från vårt community
         </div>
-      </div>
-    </section>
+
+        <!-- card: -->
+
+        <div
+          id="carousel"
+          class="mx-auto box-content flex max-w-sm snap-x snap-mandatory gap-8 overflow-x-auto whitespace-normal">
+          <div
+            class="flex max-w-sm flex-[0_0_auto] flex-col gap-4 bg-[url('../assets/testimonials-card-bg.png')] p-4">
+            <div class="flex flex-row items-start justify-between">
+              <img
+                src="../assets/testimonials-person-1.png"
+                alt="Pro-Tech exclusive member Sture" />
+              <img src="../assets/logo-bear-white.png" alt="" />
+            </div>
+            <div
+              class="font-IBM text-base font-normal leading-tight text-white">
+              “Fantastiska teknikprodukter för friluftslivet! Jag är imponerad
+              av den höga kvaliteten och innovationen i varje produkt jag köpt
+              från dem. Deras batteripack har verkligen förlängt mina äventyr
+              och nätverksutökaren har hållit mig uppkopplad även på avlägsna
+              platser.”
+            </div>
+            <div class="flex flex-col items-center gap-2">
+              <div
+                class="text-proTechOrange font-IBM text-base font-normal leading-tight">
+                Sture Svensson
+              </div>
+              <ul class="mx-auto flex flex-row gap-2">
+                <li>
+                  <img src="../assets/star-orange.svg" alt="Orange star" />
+                </li>
+                <li>
+                  <img src="../assets/star-orange.svg" alt="Orange star" />
+                </li>
+                <li>
+                  <img src="../assets/star-orange.svg" alt="Orange star" />
+                </li>
+                <li>
+                  <img src="../assets/star-orange.svg" alt="Orange star" />
+                </li>
+                <li><img src="../assets/star-grey.svg" alt="Grey star" /></li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="flex max-w-sm flex-[0_0_auto] flex-col gap-4 bg-[url('../assets/testimonials-card-bg.png')] p-4">
+            <div class="flex flex-row items-start justify-between">
+              <img
+                src="../assets/testimonials-person-2.png"
+                alt="Pro-Tech exclusive member Marie" />
+              <img src="../assets/logo-bear-white.png" alt="" />
+            </div>
+            <div
+              class="font-IBM text-base font-normal leading-tight text-white">
+              "Eldstad som genererar el – vilken genialisk idé! Jag älskar hur
+              deras produkter inte bara gör campinglivet bekvämare utan även mer
+              miljövänligt. Utmärkt kundservice och snabb leverans, jag
+              rekommenderar dem starkt till alla friluftsälskare."
+            </div>
+            <div class="flex flex-col items-center gap-2">
+              <div
+                class="text-proTechOrange font-IBM text-base font-normal leading-tight">
+                Marie Månsson
+              </div>
+              <ul class="mx-auto flex flex-row gap-2">
+                <li>
+                  <img src="../assets/star-orange.svg" alt="Orange star" />
+                </li>
+                <li>
+                  <img src="../assets/star-orange.svg" alt="Orange star" />
+                </li>
+                <li>
+                  <img src="../assets/star-orange.svg" alt="Orange star" />
+                </li>
+                <li>
+                  <img src="../assets/star-grey.svg" alt="Grey star" />
+                </li>
+                <li>
+                  <img src="../assets/star-grey.svg" alt="Grey star" />
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="flex max-w-sm flex-[0_0_auto] flex-col gap-4 bg-[url('../assets/testimonials-card-bg.png')] p-4">
+            <div class="flex flex-row items-start justify-between">
+              <img
+                src="../assets/testimonials-person-3.png"
+                alt="Pro-Tech exclusive member Kalle" />
+              <img src="../assets/logo-bear-white.png" alt="" />
+            </div>
+            <div
+              class="font-IBM text-base font-normal leading-tight text-white">
+              "Enastående företag med ett sortiment som verkligen förbättrar
+              friluftsäventyr! Deras stora batteripack har gett mig tillräckligt
+              med energi för flerdagars vandringar och nätverksutökaren har
+              varit ovärderlig"
+            </div>
+            <div class="flex flex-col items-center gap-2">
+              <div
+                class="text-proTechOrange font-IBM text-base font-normal leading-tight">
+                Kalle Karlsson
+              </div>
+              <ul class="mx-auto flex flex-row gap-2">
+                <li>
+                  <img src="../assets/star-orange.svg" alt="Orange star" />
+                </li>
+                <li>
+                  <img src="../assets/star-orange.svg" alt="Orange star" />
+                </li>
+                <li>
+                  <img src="../assets/star-orange.svg" alt="Orange star" />
+                </li>
+                <li>
+                  <img src="../assets/star-orange.svg" alt="Orange star" />
+                </li>
+                <li>
+                  <img src="../assets/star-orange.svg" alt="Orange star" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
     <!-- testimonials section: -->
     <section class="my-16">
@@ -232,8 +383,25 @@
             Adventureland, Outdooria 54321 <br />
             Nature Haven
           </div>
-        </div>
-      </footer>
-    </section>
+          <div class="flex flex-col gap-1 tracking-wider">
+            <div class="hidden md:flex md:flex-col md:gap-1 md:tracking-wider">
+              <div class="font-bold uppercase text-white">Social</div>
+              <a href="#" class="font-light uppercase text-white">Facebook</a>
+              <a href="#" class="font-light uppercase text-white">Instagram</a>
+              <a href="#" class="font-light uppercase text-white">Youtube</a>
+            </div>
+            <div class="flex flex-col tracking-wider">
+              <div class="font-bold uppercase text-white">Address</div>
+              <div class="font-light text-white">
+                Protech Headquarters <br />
+                Wilderness Way 123 <br />
+                Adventureland, Outdooria 54321 <br />
+                Nature Haven
+              </div>
+            </div>
+          </div>
+        </footer>
+      </section>
+    </main>
   </body>
 </html>
