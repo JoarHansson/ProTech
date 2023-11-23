@@ -7,6 +7,9 @@ module.exports = {
         sans: ["Oswald"],
         IBM: ["IBM Plex Mono"],
       },
+      colors: {
+        proTechOrange: "#DE9E36",
+      },
     },
   },
   plugins: [],
