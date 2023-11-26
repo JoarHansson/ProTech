@@ -18,16 +18,12 @@ buttonsJoinCommunity.forEach((button) => {
   button.addEventListener("click", () => {
     if (button.innerText == "GÅ MED I COMMUNITY") {
       button.innerText = "VI HÖRS PÅ MEJLEN";
-      button.classList.remove("bg-white");
-      button.classList.add("bg-emerald-900");
-      button.classList.remove("text-black");
-      button.classList.add("text-white");
+      button.classList.remove("bg-white", "text-black");
+      button.classList.add("bg-emerald-900", "text-white");
     } else if (button.innerText == "VI HÖRS PÅ MEJLEN") {
       button.innerText = "GÅ MED I COMMUNITY";
-      button.classList.remove("bg-emerald-900");
-      button.classList.add("bg-white");
-      button.classList.remove("text-white");
-      button.classList.add("text-black");
+      button.classList.remove("bg-emerald-900", "text-white");
+      button.classList.add("bg-white", "text-black");
     }
   });
 });

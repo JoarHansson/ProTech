@@ -8,13 +8,17 @@
   @apply box-border;
 }
 
-/* remove horizontal scrollbar on slider */
 @layer utilities {
+  /* remove horizontal scrollbar on slider */
   .scrollbar-hide {
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* IE 10+ */
   }
   .scrollbar-hide::-webkit-scrollbar {
     display: none; /* Safari and Chrome */
+  }
+
+  .button-join-community {
+    transition: all 0.3s ease;
   }
 }
