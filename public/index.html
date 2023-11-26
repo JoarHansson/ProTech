@@ -45,7 +45,7 @@
       </header>
       <!-- hero -->
       <div
-        class="flex flex-col items-start gap-2 px-4 pb-52 pt-36 md:p-36 md:text-left md:text-8xl">
+        class="flex flex-col gap-2 px-4 pb-52 pt-36 md:p-36 md:text-left md:text-8xl">
         <div
           class="flex flex-col gap-2 text-5xl font-bold uppercase leading-normal tracking-wide">
           <h1 class="text-white">Teknik för ditt</h1>
@@ -53,14 +53,13 @@
           <h1 class="text-white">I naturen</h1>
         </div>
         <h5
-          class="text-left font-IBM text-base font-normal capitalize leading-tight text-white md:text-2xl">
-          Anslut till vår äventyrscommunity och få exklusiva erbjudanden för din
-          nästa friluftsutflykt! Skriv in din e-post för att börja upptäcka
+          class="max-w-md text-left font-IBM text-base font-normal leading-tight text-white md:text-2xl">
+          Skriv in din e-post för att ansluta till vår äventyrscommunity och få
+          en gratis keps med ditt första köp från vår nya kollektion!
         </h5>
         <button
-          id="button-join-community"
-          class="mx-auto mt-4 rounded-md bg-white px-4 py-2 font-IBM text-2xl font-medium uppercase text-black md:text-4xl">
-          Gå med i community
+          class="button-join-community mx-auto mt-4 rounded-md bg-white px-4 py-2 font-IBM text-2xl font-medium uppercase text-black md:text-4xl">
+          GÅ MED I COMMUNITY
         </button>
         <div class="mx-auto flex flex-row justify-center gap-2">
           <img src="../assets/icon-globe.png" alt="" />
@@ -74,10 +73,11 @@
       </div>
     </section>
 
-    <!-- collection section: -->
+    <!-- gradient -->
     <main class="bg-gradient-to-b from-gray-950 via-teal-950 to-stone-500">
+      <!-- collection section: -->
       <section
-        class="flex flex-col items-start gap-8 px-8 py-24 md:items-center md:px-0">
+        class="flex flex-col items-center gap-8 px-8 py-24 md:items-center md:px-0">
         <!-- image boxes: -->
         <img src="../assets/kollektionen.png" alt="collection" />
 
@@ -94,24 +94,26 @@
               alt="Pro-Tech logo orange" />
           </div>
           <div
-            class="text-proTechOrange font-IBM text-2xl font-medium capitalize md:text-4xl md:font-medium">
-            Futuristisk & Modern
+            class="max-w-md font-IBM text-2xl font-medium capitalize text-proTechOrange md:text-4xl md:font-medium">
+            Nordisk kraft och teknik i symbios för vilda äventyr
           </div>
           <div
-            class="font-IBM text-base font-normal leading-tight text-white md:text-2xl md:font-normal">
-            Ta friluftsupplevelsen till nya höjder med avancerade funktioner.
-            Inkluderat är ett kraftfullt batteripack för längre äventyr, en
-            nätverksutökare för pålitlig anslutning var du än är och en
-            innovativ eldstad som inte bara ger värme och möjlighet att laga mat
-            utan också genererar el när du eldar. Utforska det bästa inom
-            friluftsteknik för en komplett och bekväm utomhusupplevelse!
+            class="max-w-md font-IBM text-base font-normal leading-tight text-white md:text-2xl md:font-normal">
+            Vår Nordisk Wildtech Kollektion är en hyllning till äventyret och
+            den robusta skönheten i nordisk natur. Genom att kombinera kraften
+            från naturen med avancerad teknik skapar vi pålitliga följeslagare
+            för dina friluftsäventyr. Varje enhet, inspirerad av nordiska
+            rovdjur som ulven, korpen och björnen, är utformad för att erbjuda
+            styrka, intelligens och tillförlitlighet i de mest utmanande
+            miljöerna. Utforska vildmarken med tillförsikt och låt våra verktyg
+            förverkliga din passion för äventyr.
           </div>
         </div>
       </section>
 
       <!-- product section: -->
       <section
-        class="flex flex-col items-start gap-8 px-8 py-24 md:items-center md:px-0">
+        class="m-auto flex flex-col items-center gap-8 px-8 py-24 md:items-center md:px-0">
         <!-- image boxes: -->
         <img src="../assets/bear-temp.png" alt="Product" />
 
@@ -123,11 +125,11 @@
             Trailblazer
           </div>
           <div
-            class="text-proTechOrange font-IBM text-2xl font-medium capitalize md:text-4xl md:font-medium">
+            class="font-IBM text-2xl font-medium capitalize text-proTechOrange md:text-4xl md:font-medium">
             Din Campingkompanjon
           </div>
           <div
-            class="font-IBM text-base font-normal leading-tight text-white md:text-2xl md:font-normal">
+            class="max-w-md font-IBM text-base font-normal leading-tight text-white md:text-2xl md:font-normal">
             Upptäck en ny era av utomhuskommunikation med TrailBlazer ProPhone,
             en nästa generations robusta smartphone designad för att lyfta dina
             vildmarksäventyr.
@@ -136,19 +138,18 @@
       </section>
 
       <!-- testimonials section: -->
-      <section class="mx-8 my-16">
+      <section class="mx-4 my-16 flex flex-col">
         <div
-          class="text-proTechOrange mb-8 text-center font-IBM text-2xl font-medium capitalize leading-8">
+          class="mb-8 text-center font-IBM text-2xl font-medium capitalize leading-8 text-proTechOrange">
           Recensioner Från vårt community
         </div>
 
-        <!-- card: -->
-
+        <!-- slides container -->
         <div
-          id="carousel"
-          class="mx-auto box-content flex max-w-sm snap-x snap-mandatory gap-8 overflow-x-auto whitespace-normal">
+          class="scrollbar-hide m-auto flex w-[320px;] snap-x snap-mandatory gap-8 overflow-x-auto">
+          <!-- card 1: -->
           <div
-            class="flex max-w-sm flex-[0_0_auto] flex-col gap-4 bg-[url('../assets/testimonials-card-bg.png')] p-4">
+            class="mx-auto flex h-[450px] w-full max-w-[320px] flex-shrink-0 snap-start flex-col justify-between bg-[url('../assets/testimonials-card-bg.png')] p-4">
             <div class="flex flex-row items-start justify-between">
               <img
                 src="../assets/testimonials-person-1.png"
@@ -165,7 +166,7 @@
             </div>
             <div class="flex flex-col items-center gap-2">
               <div
-                class="text-proTechOrange font-IBM text-base font-normal leading-tight">
+                class="font-IBM text-base font-normal leading-tight text-proTechOrange">
                 Sture Svensson
               </div>
               <ul class="mx-auto flex flex-row gap-2">
@@ -185,9 +186,9 @@
               </ul>
             </div>
           </div>
-
+          <!-- card 2: -->
           <div
-            class="flex max-w-sm flex-[0_0_auto] flex-col gap-4 bg-[url('../assets/testimonials-card-bg.png')] p-4">
+            class="mx-auto flex h-[450px] w-full max-w-[320px] flex-shrink-0 snap-start flex-col justify-between bg-[url('../assets/testimonials-card-bg.png')] p-4">
             <div class="flex flex-row items-start justify-between">
               <img
                 src="../assets/testimonials-person-2.png"
@@ -203,7 +204,7 @@
             </div>
             <div class="flex flex-col items-center gap-2">
               <div
-                class="text-proTechOrange font-IBM text-base font-normal leading-tight">
+                class="font-IBM text-base font-normal leading-tight text-proTechOrange">
                 Marie Månsson
               </div>
               <ul class="mx-auto flex flex-row gap-2">
@@ -225,8 +226,9 @@
               </ul>
             </div>
           </div>
+          <!-- card 3: -->
           <div
-            class="flex max-w-sm flex-[0_0_auto] flex-col gap-4 bg-[url('../assets/testimonials-card-bg.png')] p-4">
+            class="mx-auto flex h-[450px] w-full max-w-[320px] flex-shrink-0 snap-start flex-col justify-between bg-[url('../assets/testimonials-card-bg.png')] p-4">
             <div class="flex flex-row items-start justify-between">
               <img
                 src="../assets/testimonials-person-3.png"
@@ -242,7 +244,7 @@
             </div>
             <div class="flex flex-col items-center gap-2">
               <div
-                class="text-proTechOrange font-IBM text-base font-normal leading-tight">
+                class="font-IBM text-base font-normal leading-tight text-proTechOrange">
                 Kalle Karlsson
               </div>
               <ul class="mx-auto flex flex-row gap-2">
@@ -267,136 +269,147 @@
         </div>
       </section>
 
-    <!-- testimonials section: -->
-    <section class="my-16">
-      <div class="text-center text-4xl font-bold uppercase text-black">
-        testimonials
-      </div>
-      <div class="text-center text-4xl font-bold uppercase text-black">
-        * * * * *
-      </div>
-    </section>
-    <!-- backstory section: -->
-    <section class="flex flex-col items-start gap-8 px-8 py-24 md:items-center md:px-0">
-      <div
-          class="w-fill flex flex-col items-start justify-start gap-4 md:justify-center md:p-4">
+      <!-- backstory section: -->
+      <section
+        class="flex flex-col items-start justify-center gap-8 px-8 py-24 md:items-center md:px-0">
+        <div
+          class="w-fill mx-auto flex flex-col items-start justify-start gap-4 md:justify-center md:p-4">
           <div
             class="text-4xl font-bold capitalize leading-10 tracking-wide text-white md:text-8xl">
             Pro-tech
           </div>
           <div
-            class="text-proTechOrange font-IBM text-2xl font-medium capitalize md:text-4xl md:font-medium">
+            class="max-w-md font-IBM text-2xl font-medium capitalize text-proTechOrange md:text-4xl md:font-medium">
             Teknik för att omdefiniera äventyret
           </div>
           <div
-            class="font-IBM text-base font-normal leading-tight text-white md:text-2xl md:font-normal">
-            Pro-Tech föddes ur passionen hos en grupp vänner i Göteborg, vägledda av en gemensam längtan 
-            efter äventyr och en djup respekt för naturen. Deras historia började på de nordiska vidderna, 
-            där stjärnklara nätter och naturens tystnad blev deras fristad. Inspirerade av den fria känslan 
-            av att vara ute i det vilda, men lika mycket av den moderna världens bekvämlighet, skapade de tre 
-            banbrytande produkter. Dessa verktyg är inte bara enkla prylar; de är nycklar till en värld av äventyr, 
-            utformade för att förenkla och inspirera till en djupare förbindelse med naturen. Genom att kombinera 
-            teknikens framsteg med passionen för vildmarken strävar Pro-Tech efter att öppna dörrar till naturens 
-            underverk för alla äventyrssugna själar. Deras drivkraft är att sänka trösklarna till naturen, skapa 
-            en samexistens mellan teknik och vildmark och på så vis göra varje steg ut i det okända till en hyllning 
-            till äventyrets sanna natur.
+            class="max-w-md font-IBM text-base font-normal leading-tight text-white md:text-2xl md:font-normal">
+            Pro-Tech föddes ur passionen hos en grupp vänner i Göteborg,
+            vägledda av en gemensam längtan efter äventyr och en djup respekt
+            för naturen. Deras historia började på de nordiska vidderna, där
+            stjärnklara nätter och naturens tystnad blev deras fristad.
+            Inspirerade av den fria känslan av att vara ute i det vilda, men
+            lika mycket av den moderna världens bekvämlighet, skapade de tre
+            banbrytande produkter. Dessa verktyg är inte bara enkla prylar; de
+            är nycklar till en värld av äventyr, utformade för att förenkla och
+            inspirera till en djupare förbindelse med naturen. Genom att
+            kombinera teknikens framsteg med passionen för vildmarken strävar
+            Pro-Tech efter att öppna dörrar till naturens underverk för alla
+            äventyrssugna själar. Deras drivkraft är att sänka trösklarna till
+            naturen, skapa en samexistens mellan teknik och vildmark och på så
+            vis göra varje steg ut i det okända till en hyllning till äventyrets
+            sanna natur.
           </div>
-          <img src="/assets/polaroid-group.png" alt="" class="w-full md:hidden">
+          <img
+            src="/assets/polaroid-group.png"
+            alt=""
+            class="w-full max-w-md md:hidden" />
         </div>
-      <div class="hidden flex-col gap-8 md:flex">
-        <div class="h-52 w-72 bg-slate-100"></div>
-        <div class="h-52 w-72 bg-slate-100"></div>
-        <div class="h-52 w-72 bg-slate-100"></div>
-      </div>
-    </section>
+        <div class="hidden flex-col gap-8 md:flex">
+          <div class="h-52 w-72 bg-slate-100"></div>
+          <div class="h-52 w-72 bg-slate-100"></div>
+          <div class="h-52 w-72 bg-slate-100"></div>
+        </div>
+      </section>
+    </main>
+
     <!-- Footer page -->
-    <section class="w-full bg-[url('../assets/botten-berg.png')] bg-cover bg-center">
+    <section
+      class="w-full bg-[url('../assets/botten-berg.png')] bg-cover bg-center">
       <!-- Last call text/button -->
-      <div class="flex flex-col items-center gap-12">
+      <div class="mx-8 flex flex-col items-center gap-12">
         <div
           class="text-4xl font-bold capitalize leading-10 tracking-wide text-proTechOrange md:text-8xl">
           Greppa äventyret
         </div>
         <div
-          class="font-IBM text-base text-center font-normal leading-tight text-white md:text-2xl md:font-normal">
-          Tack för att du kom så här långt! Skriv upp dig för vårt nyhetsbrev och få chansen att bli en 
-          av de första 100 att få en gratis keps vid nästa köp. Få exklusiva erbjudanden och spännande nyheter 
-          direkt i din inkorg. Skriv in din e-postadress nu och bli en del av vårt äventyrskollektiv!
+          class="max-w-md text-center font-IBM text-base font-normal leading-tight text-white md:text-2xl md:font-normal">
+          Tack för att du kom så här långt! Skriv upp dig för vårt nyhetsbrev
+          och få chansen att bli en av de första 100 att få en gratis keps vid
+          nästa köp. Få exklusiva erbjudanden och spännande nyheter direkt i din
+          inkorg. Skriv in din e-postadress nu och bli en del av vårt
+          äventyrskollektiv!
         </div>
       </div>
       <div class="button my-20 text-center text-5xl md:text-2xl">
         <button
-          class="mx-auto mt-4 rounded-md bg-white px-4 py-2 font-IBM text-2xl font-medium uppercase text-black md:text-4xl">
-          Gå med i community
+          class="button-join-community mx-auto mt-4 rounded-md bg-white px-4 py-2 font-IBM text-2xl font-medium uppercase text-black md:text-4xl">
+          GÅ MED I COMMUNITY
         </button>
       </div>
       <!-- Social Icons Mobile-->
-      <div class="md:hidden flex flex-row justify-center gap-5 my-14">
-        <a href="#"><img src="/assets/fb-icon.svg" alt=""></a>
-        <a href="#"><img src="/assets/insta-icon.svg" alt=""></a>
-        <a href="#"><img src="/assets/yt-icon.svg" alt=""></a>
+      <div class="my-14 flex flex-row justify-center gap-5 md:hidden">
+        <a href="#"><img src="/assets/fb-icon.svg" alt="" /></a>
+        <a href="#"><img src="/assets/insta-icon.svg" alt="" /></a>
+        <a href="#"><img src="/assets/yt-icon.svg" alt="" /></a>
       </div>
-            <!-- Footer text -->
-            <footer class="w-full bg-neutral-950 bg-opacity-40 px-6 py-3">
-              <!-- Address Mobile -->
-              <div class="md:hidden flex flex-row justify-between">
-                <div class="flex flex-col gap-2 tracking-wider font-IBM">
-                  <div class="font-bold text-white text-base uppercase leading-tight">Adress</div>
-                  <div class="text-white">
-                    Protech Headquarters <br />
-                    Wilderness Way 123 <br />
-                    Adventureland, Outdooria 54321 <br />
-                    Nature Haven
-                  </div>
-                </div>
-                <!-- Contact Mobile -->
-                <div class="flex flex-col gap-2 tracking-wider font-IBM">
-                  <div class="font-bold text-white text-base uppercase leading-tight">Kontakta oss</div>
-                <div class="text-white">protech@protech.com</div>
-                <div class="text-white">+46347865993</div>
-                </div>
-              </div>
-              <!-- Protech Footer Logo hidden -->
-            <div class="hidden">
-              <span
-                class="text-3xl font-bold leading-[43.20px] tracking-wider text-white"
-                >PRO-</span>
-              <span
-                class="text-3xl font-bold leading-[43.20px] tracking-wider text-neutral-500"
-                >TECH</span
-              >
-              <div class="my-8 font-light leading-tight tracking-wider text-white">
-                Copyright © <br />
-                2023
-              </div>
+      <!-- Footer text -->
+      <footer class="w-full bg-neutral-950 bg-opacity-40 px-6 py-3">
+        <!-- Address Mobile -->
+        <div class="flex flex-row justify-between md:hidden">
+          <div class="flex flex-col gap-2 font-IBM tracking-wider">
+            <div class="text-base font-bold uppercase leading-tight text-white">
+              Adress
             </div>
-              <!-- Contact Desktop -->
-            <div class="hidden md:flex md:flex-row md:justify-between">
-              <div class="hidden md:flex md:flex-col md:gap-1 md:tracking-wider md:text-base">
-                <div class="font bold text-white">KONTAKTA OSS</div>
-              <div class="font-light text-white">protech@protech.com</div>
-              <div class="font-light text-white">+46347865993</div>
-              </div>
-        <!-- Social Desktop -->
-        <div class="hidden md:flex md:flex-col md:gap-1 md:tracking-wider">
-          <div class="font-bold uppercase text-white">Social</div>
-          <a href="#" class="font-light uppercase text-white">Facebook</a>
-          <a href="#" class="font-light uppercase text-white">Instagram</a>
-          <a href="#" class="font-light uppercase text-white">Youtube</a>
-        </div>
-        <!-- Address Desktop -->
-        <div class="hidden md:flex md:flex-col md:tracking-wider md:text-base">
-          <div class="font-bold text-white">ADDRESS</div>
-          <div class="font-light text-white">
-            Protech Headquarters <br />
-            Wilderness Way 123 <br />
-            Adventureland, Outdooria 54321 <br />
-            Nature Haven
+            <div class="text-xs text-white">
+              Protech HQ <br />
+              Wilderness Way 1 <br />
+              Adventureland 54321 <br />
+              Nature Haven
+            </div>
+          </div>
+          <!-- Contact Mobile -->
+          <div class="flex flex-col gap-2 font-IBM tracking-wider">
+            <div class="text-base font-bold uppercase leading-tight text-white">
+              Kontakta oss
+            </div>
+            <div class="text-xs text-white">protech@protech.com</div>
+            <div class="text-xs text-white">+46347865993</div>
           </div>
         </div>
-      </div>
+        <!-- Protech Footer Logo hidden -->
+        <div class="hidden">
+          <span
+            class="text-3xl font-bold leading-[43.20px] tracking-wider text-white"
+            >PRO-</span
+          >
+          <span
+            class="text-3xl font-bold leading-[43.20px] tracking-wider text-neutral-500"
+            >TECH</span
+          >
+          <div class="my-8 font-light leading-tight tracking-wider text-white">
+            Copyright © <br />
+            2023
+          </div>
+        </div>
+        <!-- Contact Desktop -->
+        <div class="hidden md:flex md:flex-row md:justify-between">
+          <div
+            class="hidden md:flex md:flex-col md:gap-1 md:text-base md:tracking-wider">
+            <div class="font bold text-white">KONTAKTA OSS</div>
+            <div class="font-light text-white">protech@protech.com</div>
+            <div class="font-light text-white">+46347865993</div>
+          </div>
+          <!-- Social Desktop -->
+          <div class="hidden md:flex md:flex-col md:gap-1 md:tracking-wider">
+            <div class="font-bold uppercase text-white">Social</div>
+            <a href="#" class="font-light uppercase text-white">Facebook</a>
+            <a href="#" class="font-light uppercase text-white">Instagram</a>
+            <a href="#" class="font-light uppercase text-white">Youtube</a>
+          </div>
+          <!-- Address Desktop -->
+          <div
+            class="hidden md:flex md:flex-col md:text-base md:tracking-wider">
+            <div class="font-bold text-white">ADDRESS</div>
+            <div class="font-light text-white">
+              Protech Headquarters <br />
+              Wilderness Way 123 <br />
+              Adventureland, Outdooria 54321 <br />
+              Nature Haven
+            </div>
+          </div>
+        </div>
       </footer>
-      </section>
-    </main>
+    </section>
   </body>
 </html>

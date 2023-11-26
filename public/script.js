@@ -9,23 +9,23 @@ buttonSwitchLanguage.addEventListener("click", () => {
   }
 });
 
-// change apperance of #button-join-community
-const buttonJoinCommunity = document.querySelector("#button-join-community");
+// change apperance of .button-join-community
+const buttonsJoinCommunity = document.querySelectorAll(
+  ".button-join-community",
+);
 
-buttonJoinCommunity.addEventListener("click", () => {
-  if (buttonJoinCommunity.innerText == "GÅ MED I COMMUNITY") {
-    buttonJoinCommunity.innerText = "VI HÖRS PÅ MEJLEN";
-    buttonJoinCommunity.classList.remove("bg-white");
-    buttonJoinCommunity.classList.add("bg-emerald-900");
-    buttonJoinCommunity.classList.remove("text-black");
-    buttonJoinCommunity.classList.add("text-white");
-  } else if (buttonJoinCommunity.innerText == "VI HÖRS PÅ MEJLEN") {
-    buttonJoinCommunity.innerText = "GÅ MED I COMMUNITY";
-    buttonJoinCommunity.classList.remove("bg-emerald-900");
-    buttonJoinCommunity.classList.add("bg-white");
-    buttonJoinCommunity.classList.remove("text-white");
-    buttonJoinCommunity.classList.add("text-black");
-  }
+buttonsJoinCommunity.forEach((button) => {
+  button.addEventListener("click", () => {
+    if (button.innerText == "GÅ MED I COMMUNITY") {
+      button.innerText = "VI HÖRS PÅ MEJLEN";
+      button.classList.remove("bg-white", "text-black");
+      button.classList.add("bg-emerald-900", "text-white");
+    } else if (button.innerText == "VI HÖRS PÅ MEJLEN") {
+      button.innerText = "GÅ MED I COMMUNITY";
+      button.classList.remove("bg-emerald-900", "text-white");
+      button.classList.add("bg-white", "text-black");
+    }
+  });
 });
 
 // display and remove drop-down menu
