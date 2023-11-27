@@ -277,15 +277,15 @@
       </div>
     </section>
     <!-- backstory section: -->
-    <section class="flex flex-col items-start gap-8 px-8 py-24 md:items-center md:px-0">
+    <section class="inline-flex items-start gap-8 px-8 py-24 md:justify-start md:items-center md:px-10">
       <div
-          class="w-fill flex flex-col items-start justify-start gap-4 md:justify-center md:p-4">
+          class="flex flex-col items-start justify-start gap-8 md:justify-center md:p-4">
           <div
-            class="text-4xl font-bold capitalize leading-10 tracking-wide text-white md:text-8xl">
+            class="text-4xl font-bold capitalize leading-10 tracking-wide text-white md:text-[64px]">
             Pro-tech
           </div>
           <div
-            class="text-proTechOrange font-IBM text-2xl font-medium capitalize md:text-4xl md:font-medium">
+            class="text-proTechOrange font-IBM text-2xl font-medium capitalize md:text-4xl md:font-medium md:py-4">
             Teknik för att omdefiniera äventyret
           </div>
           <div
@@ -301,41 +301,50 @@
             en samexistens mellan teknik och vildmark och på så vis göra varje steg ut i det okända till en hyllning 
             till äventyrets sanna natur.
           </div>
-          <img src="/assets/polaroid-group.png" alt="" class="w-full md:hidden">
+          <img src="/assets/polaroid-group.png" alt="polaroids" class="w-full md:hidden">
         </div>
-      <div class="hidden flex-col gap-8 md:flex">
+          <img src="/assets/polaroid_desktop.png" alt="polaroids" class="hidden md:flex">
+      <!-- <div class="hidden flex-col gap-8 md:flex">
         <div class="h-52 w-72 bg-slate-100"></div>
         <div class="h-52 w-72 bg-slate-100"></div>
         <div class="h-52 w-72 bg-slate-100"></div>
-      </div>
+      </div> -->
     </section>
     <!-- Footer page -->
-    <section class="w-full bg-[url('../assets/botten-berg.png')] bg-cover bg-center">
+    <section class="w-fill bg-[url('../assets/botten-berg.png')] bg-cover bg-center">
       <!-- Last call text/button -->
       <div class="flex flex-col items-center gap-12">
         <div
-          class="text-4xl font-bold capitalize leading-10 tracking-wide text-proTechOrange md:text-8xl">
+          class="text-4xl font-bold capitalize leading-10 tracking-wider text-proTechOrange md:py-16 md:text-[64px]">
           Greppa äventyret
         </div>
         <div
-          class="font-IBM text-base text-center font-normal leading-tight text-white md:text-2xl md:font-normal">
+          class="font-IBM text-base text-center font-normal leading-tight text-white md:mx-60 mb-10 md:text-2xl md:font-medium">
           Tack för att du kom så här långt! Skriv upp dig för vårt nyhetsbrev och få chansen att bli en 
           av de första 100 att få en gratis keps vid nästa köp. Få exklusiva erbjudanden och spännande nyheter 
           direkt i din inkorg. Skriv in din e-postadress nu och bli en del av vårt äventyrskollektiv!
         </div>
       </div>
-      <div class="button my-20 text-center text-5xl md:text-2xl">
+      <form class="flex flex-col gap-4" onsubmit="return false">
+        <input
+          type="text"
+          name="input"
+          placeholder="example@email.com"
+          class="input-join-community mx-auto rounded-lg border-2 border-white bg-neutral-300 px-4 py-2 font-IBM text-xl font-normal leading-8 text-black focus:outline-none" />
+
         <button
-          class="mx-auto mt-4 rounded-md bg-white px-4 py-2 font-IBM text-2xl font-medium uppercase text-black md:text-4xl">
-          Gå med i community
+          type="submit"
+          for="input"
+          class="button-join-community mx-auto rounded-md bg-white bg-opacity-40 px-4 py-2 font-IBM text-2xl font-medium uppercase text-white md:text-4xl">
+          GÅ MED I COMMUNITY
         </button>
-      </div>
+      </form>
       <!-- Social Icons Mobile-->
-      <div class="md:hidden flex flex-row justify-center gap-5 my-14">
+      <!-- <div class="md:hidden flex flex-row justify-center gap-5 my-14">
         <a href="#"><img src="/assets/fb-icon.svg" alt=""></a>
         <a href="#"><img src="/assets/insta-icon.svg" alt=""></a>
         <a href="#"><img src="/assets/yt-icon.svg" alt=""></a>
-      </div>
+      </div> -->
             <!-- Footer text -->
             <footer class="w-full bg-neutral-950 bg-opacity-40 px-6 py-3">
               <!-- Address Mobile -->
@@ -356,24 +365,34 @@
                 <div class="text-white">+46347865993</div>
                 </div>
               </div>
-              <!-- Protech Footer Logo hidden -->
-            <div class="hidden">
-              <span
-                class="text-3xl font-bold leading-[43.20px] tracking-wider text-white"
-                >PRO-</span>
-              <span
-                class="text-3xl font-bold leading-[43.20px] tracking-wider text-neutral-500"
-                >TECH</span
-              >
-              <div class="my-8 font-light leading-tight tracking-wider text-white">
-                Copyright © <br />
-                2023
-              </div>
-            </div>
-              <!-- Contact Desktop -->
+              <!-- Protech Footer Logo/text -->
             <div class="hidden md:flex md:flex-row md:justify-between">
+              <div class="hidden md:flex flex-col justify-between">
+                <!-- <span
+                  class="text-3xl font-bold leading-[43.20px] tracking-wider text-white"
+                  >PRO-</span>
+                <span
+                  class="text-3xl font-bold leading-[43.20px] tracking-wider text-neutral-500"
+                  >TECH</span
+                > -->
+                <div class="justify-left flex flex-row items-center gap-4">
+                  <img
+                    id="logo-pro-tech"
+                    src="../assets/logo-PT-white.png"
+                    alt="Pro-Tech logo text" />
+                  <img
+                    id="logo-bear"
+                    src="../assets/logo-bear-white.png"
+                    alt="Pro-Tech logo bear" />
+                </div>
+                <div class="my-0 font-light leading-tight tracking-wider text-white">
+                  <p>Copyright ©</p>
+                  <p>2023</p>
+                </div>
+              </div>
+              <!-- Contact Desktop -->
               <div class="hidden md:flex md:flex-col md:gap-1 md:tracking-wider md:text-base">
-                <div class="font bold text-white">KONTAKTA OSS</div>
+                <div class="font-bold uppercase text-white">Kontakta oss</div>
               <div class="font-light text-white">protech@protech.com</div>
               <div class="font-light text-white">+46347865993</div>
               </div>
