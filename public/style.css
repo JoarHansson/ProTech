@@ -596,6 +596,18 @@ video {
   margin: auto;
 }
 
+.-m-12 {
+  margin: -3rem;
+}
+
+.-m-4 {
+  margin: -1rem;
+}
+
+.-m-8 {
+  margin: -2rem;
+}
+
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -653,6 +665,18 @@ video {
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.-mb-8 {
+  margin-bottom: -2rem;
+}
+
+.-mb-16 {
+  margin-bottom: -4rem;
+}
+
+.-mt-16 {
+  margin-top: -4rem;
 }
 
 .flex {
@@ -729,6 +753,14 @@ video {
 
 .snap-start {
   scroll-snap-align: start;
+}
+
+.list-inside {
+  list-style-position: inside;
+}
+
+.list-disc {
+  list-style-type: disc;
 }
 
 .flex-row {
@@ -872,6 +904,10 @@ video {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 
+.bg-\[url\(\'\.\.\/assets\/bg-norrsken-mobile\.png\'\)\] {
+  background-image: url('../assets/bg-norrsken-mobile.png');
+}
+
 .from-gray-950 {
   --tw-gradient-from: #030712 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(3 7 18 / 0) var(--tw-gradient-to-position);
@@ -891,8 +927,28 @@ video {
   background-size: cover;
 }
 
+.bg-auto {
+  background-size: auto;
+}
+
+.bg-contain {
+  background-size: contain;
+}
+
 .bg-center {
   background-position: center;
+}
+
+.bg-top {
+  background-position: top;
+}
+
+.bg-bottom {
+  background-position: bottom;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .p-4 {

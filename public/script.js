@@ -22,7 +22,7 @@ buttonsJoinCommunity.forEach((button) => {
     inputsJoinCommunity.forEach((input) => {
       if (/.*@.*\..*/.test(input.value)) {
         button.textContent = "VI HÖRS PÅ MEJLEN";
-        button.classList.remove("bg-white", "text-black");
+        button.classList.remove("bg-white", "text-black", "bg-opacity-40");
         button.classList.add("bg-emerald-900", "text-white");
         button.disabled = true;
 

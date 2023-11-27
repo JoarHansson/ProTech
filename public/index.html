@@ -67,7 +67,7 @@
           <button
             type="submit"
             for="input"
-            class="button-join-community mx-auto rounded-md bg-white px-4 py-2 font-IBM text-2xl font-medium uppercase text-black md:text-4xl">
+            class="button-join-community mx-auto rounded-md bg-white bg-opacity-40 px-4 py-2 font-IBM text-2xl font-medium uppercase text-white md:text-4xl">
             GÅ MED I COMMUNITY
           </button>
         </form>
@@ -123,26 +123,112 @@
 
       <!-- product section: -->
       <section
-        class="m-auto flex flex-col items-center gap-8 px-8 py-24 md:items-center md:px-0">
-        <!-- image boxes: -->
-        <img src="../assets/bear-temp.png" alt="Product" />
-
-        <!-- text for procuct -->
+        class="m-auto flex flex-col items-center gap-8 bg-[url('../assets/bg-norrsken-mobile.png')] bg-cover bg-top bg-no-repeat px-8 py-24 md:items-center md:px-0">
+        <!-- slides container -->
         <div
-          class="w-fill flex flex-col items-start justify-start gap-4 md:w-min md:justify-center md:p-4">
+          class="scrollbar-hide m-auto flex w-[320px;] snap-x snap-mandatory gap-8 overflow-x-auto">
+          <!-- product 1, Ulveld: -->
           <div
-            class="text-4xl font-bold capitalize leading-10 tracking-wide text-white md:text-8xl">
-            Trailblazer
+            class="flex w-full max-w-[320px] flex-shrink-0 snap-start flex-col items-start justify-start gap-4 md:w-min md:justify-center md:p-4">
+            <img
+              src="../assets/ulveld.png"
+              alt="Product"
+              class="mx-auto mb-4" />
+            <div class="flex flex-row gap-8">
+              <div
+                class="text-4xl font-bold capitalize leading-10 tracking-wide text-white md:text-8xl">
+                Ulveld
+              </div>
+              <img
+                src="../assets/logo-bear-orange.png"
+                alt="Pro-Tech logo orange" />
+            </div>
+            <div
+              class="font-IBM text-2xl font-medium capitalize text-proTechOrange md:text-4xl md:font-medium">
+              Förenar eld och teknik för äventyr i det vilda.
+            </div>
+            <div
+              class="max-w-md font-IBM text-base font-normal leading-tight text-white md:text-2xl md:font-normal">
+              Ulveld är en eldstad som inte bara möjliggör matlagning i naturen
+              utan även genererar elektricitet för att hålla dina enheter
+              laddade. Denna kombination av eld och teknik erbjuder en mångsidig
+              lösning för friluftsliv och äventyr.
+            </div>
+            <ul
+              class="max-w-md list-inside list-disc font-IBM text-base font-normal leading-tight text-white md:text-2xl md:font-normal">
+              <li>Mobildataextender för avlägsna områden</li>
+              <li>Integrerad GPS-säkerhetsfunktion</li>
+              <li>Robust design för nordiska förhållanden</li>
+            </ul>
           </div>
+          <!-- product 2, Korpöga: -->
           <div
-            class="font-IBM text-2xl font-medium capitalize text-proTechOrange md:text-4xl md:font-medium">
-            Din Campingkompanjon
+            class="flex w-full max-w-[320px] flex-shrink-0 snap-start flex-col items-start justify-start gap-4 md:w-min md:justify-center md:p-4">
+            <img
+              src="../assets/korpoga.png"
+              alt="Product"
+              class="mx-auto mb-4" />
+            <div class="flex flex-row gap-8">
+              <div
+                class="text-4xl font-bold capitalize leading-10 tracking-wide text-white md:text-8xl">
+                Korpöga
+              </div>
+              <img
+                src="../assets/logo-bear-orange.png"
+                alt="Pro-Tech logo orange" />
+            </div>
+            <div
+              class="font-IBM text-2xl font-medium capitalize text-proTechOrange md:text-4xl md:font-medium">
+              Utforska avlägsna platser med säker anslutning
+            </div>
+            <div
+              class="max-w-md font-IBM text-base font-normal leading-tight text-white md:text-2xl md:font-normal">
+              Korpöga är en mobildataextender som säkerställer en stabil
+              anslutning även i de mest avlägsna områdena. Den innehåller också
+              en integrerad GPS-säkerhetsfunktion för att garantera din trygghet
+              under utforskningen.
+            </div>
+            <ul
+              class="max-w-md list-inside list-disc font-IBM text-base font-normal leading-tight text-white md:text-2xl md:font-normal">
+              <li>Eldstad med elgenerator och matlagningsyta</li>
+              <li>USB- och hushållsuttag för anslutning</li>
+              <li>Bärbar och säker design för friluftsanvändning</li>
+            </ul>
           </div>
+          <!-- product 3, Björnstyrka: -->
           <div
-            class="max-w-md font-IBM text-base font-normal leading-tight text-white md:text-2xl md:font-normal">
-            Upptäck en ny era av utomhuskommunikation med TrailBlazer ProPhone,
-            en nästa generations robusta smartphone designad för att lyfta dina
-            vildmarksäventyr.
+            class="flex w-full max-w-[320px] flex-shrink-0 snap-start flex-col items-start justify-start gap-4 md:w-min md:justify-center md:p-4">
+            <img
+              src="../assets/bjornstyrka.png"
+              alt="Product"
+              class="mx-auto mb-4" />
+            <div class="flex flex-row gap-8">
+              <div
+                class="text-4xl font-bold capitalize leading-10 tracking-wide text-white md:text-8xl">
+                Björnstyrka
+              </div>
+              <img
+                src="../assets/logo-bear-orange.png"
+                alt="Pro-Tech logo orange" />
+            </div>
+            <div
+              class="font-IBM text-2xl font-medium capitalize text-proTechOrange md:text-4xl md:font-medium">
+              Kraft och pålitlighet för äventyr utan gränser
+            </div>
+            <div
+              class="max-w-md font-IBM text-base font-normal leading-tight text-white md:text-2xl md:font-normal">
+              Björnstyrka, ett robust batteripack med imponerande kapacitet,
+              standard USB- och hushållsuttag, inbyggd LED-lampa för extra
+              utomhusbelysning, intelligent temperaturreglering för enhetsskydd
+              – din pålitliga följeslagare för äventyr i naturen.
+            </div>
+            <ul
+              class="max-w-md list-inside list-disc font-IBM text-base font-normal leading-tight text-white md:text-2xl md:font-normal">
+              <li>Stort batteripack med imponerande kapacitet</li>
+              <li>LED-lampa för extra belysning</li>
+              <li>Bärbar design för ryggsäcksfäste</li>
+              <li>Intelligent temperaturreglering för enhetsskydd</li>
+            </ul>
           </div>
         </div>
       </section>
@@ -352,9 +438,10 @@
           <button
             type="submit"
             for="input"
-            class="button-join-community mx-auto rounded-md bg-white px-4 py-2 font-IBM text-2xl font-medium uppercase text-black md:text-4xl">
+            class="button-join-community mx-auto rounded-md bg-white bg-opacity-40 px-4 py-2 font-IBM text-2xl font-medium uppercase text-white md:text-4xl">
             GÅ MED I COMMUNITY
           </button>
+        </form>
       </div>
       <!-- Social Icons Mobile-->
       <div class="my-14 flex flex-row justify-center gap-5 md:hidden">
