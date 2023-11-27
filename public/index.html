@@ -45,7 +45,7 @@
       </header>
       <!-- hero -->
       <div
-        class="flex flex-col gap-2 px-4 pb-52 pt-36 md:p-36 md:text-left md:text-8xl">
+        class="flex flex-col gap-4 px-4 pb-52 pt-36 md:p-36 md:text-left md:text-8xl">
         <div
           class="flex flex-col gap-2 text-5xl font-bold uppercase leading-normal tracking-wide">
           <h1 class="text-white">Teknik för ditt</h1>
@@ -53,14 +53,24 @@
           <h1 class="text-white">I naturen</h1>
         </div>
         <h5
-          class="max-w-md text-left font-IBM text-base font-normal leading-tight text-white md:text-2xl">
+          class="mb-4 max-w-md text-left font-IBM text-base font-normal leading-tight text-white md:text-2xl">
           Skriv in din e-post för att ansluta till vår äventyrscommunity och få
           en gratis keps med ditt första köp från vår nya kollektion!
         </h5>
-        <button
-          class="button-join-community mx-auto mt-4 rounded-md bg-white px-4 py-2 font-IBM text-2xl font-medium uppercase text-black md:text-4xl">
-          GÅ MED I COMMUNITY
-        </button>
+        <form class="flex flex-col gap-4" onsubmit="return false">
+          <input
+            type="text"
+            name="input"
+            placeholder="example@email.com"
+            class="input-join-community mx-auto rounded-lg border-2 border-white bg-neutral-300 px-4 py-2 font-IBM text-xl font-normal leading-8 text-black focus:outline-none" />
+
+          <button
+            type="submit"
+            for="input"
+            class="button-join-community mx-auto rounded-md bg-white px-4 py-2 font-IBM text-2xl font-medium uppercase text-black md:text-4xl">
+            GÅ MED I COMMUNITY
+          </button>
+        </form>
         <div class="mx-auto flex flex-row justify-center gap-2">
           <img src="../assets/icon-globe.png" alt="" />
           <button
@@ -332,10 +342,19 @@
         </div>
       </div>
       <div class="button my-20 text-center text-5xl md:text-2xl">
-        <button
-          class="button-join-community mx-auto mt-4 rounded-md bg-white px-4 py-2 font-IBM text-2xl font-medium uppercase text-black md:text-4xl">
-          GÅ MED I COMMUNITY
-        </button>
+        <form class="flex flex-col gap-4" onsubmit="return false">
+          <input
+            type="text"
+            name="input"
+            placeholder="example@email.com"
+            class="input-join-community mx-auto rounded-lg border-2 border-white bg-neutral-300 px-4 py-2 font-IBM text-xl font-normal leading-8 text-black focus:outline-none" />
+
+          <button
+            type="submit"
+            for="input"
+            class="button-join-community mx-auto rounded-md bg-white px-4 py-2 font-IBM text-2xl font-medium uppercase text-black md:text-4xl">
+            GÅ MED I COMMUNITY
+          </button>
       </div>
       <!-- Social Icons Mobile-->
       <div class="my-14 flex flex-row justify-center gap-5 md:hidden">
