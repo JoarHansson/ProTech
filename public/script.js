@@ -1,6 +1,7 @@
-// change from SWE to ENG and vice versa
-
+/* Language button: */
 const buttonSwitchLanguage = document.querySelector("#button-switch-language");
+
+// change from SWE to ENG and vice versa
 buttonSwitchLanguage.addEventListener("click", () => {
   if (buttonSwitchLanguage.innerText == "SWE") {
     buttonSwitchLanguage.innerText = "ENG";
@@ -9,26 +10,63 @@ buttonSwitchLanguage.addEventListener("click", () => {
   }
 });
 
-// change apperance of .button-join-community
+/* Sign up-form: */
 const buttonsJoinCommunity = document.querySelectorAll(
   ".button-join-community",
 );
+const inputsJoinCommunity = document.querySelectorAll(".input-join-community");
 
+// change apperance of .button-join-community and .input-join-community
 buttonsJoinCommunity.forEach((button) => {
   button.addEventListener("click", () => {
-    if (button.innerText == "GÅ MED I COMMUNITY") {
-      button.innerText = "VI HÖRS PÅ MEJLEN";
-      button.classList.remove("bg-white", "text-black");
-      button.classList.add("bg-emerald-900", "text-white");
-    } else if (button.innerText == "VI HÖRS PÅ MEJLEN") {
-      button.innerText = "GÅ MED I COMMUNITY";
-      button.classList.remove("bg-emerald-900", "text-white");
-      button.classList.add("bg-white", "text-black");
+    inputsJoinCommunity.forEach((input) => {
+      if (/.*@.*\..*/.test(input.value)) {
+        button.textContent = "VI HÖRS PÅ MEJLEN";
+        button.classList.remove("bg-white", "text-black", "bg-opacity-40");
+        button.classList.add("bg-emerald-900", "text-white");
+        button.disabled = true;
+
+        input.classList.remove("text-black", "border-white", "font-normal");
+        input.classList.add(
+          "text-emerald-900",
+          "border-emerald-900",
+          "font-bold",
+        );
+        input.disabled = true;
+      } else if (input.value === "") {
+        // make sure the two forms on the page don't affect each other...
+        return;
+      } else {
+        input.classList.remove("text-black", "border-white");
+        input.classList.add("text-rose-600", "border-rose-600");
+      }
+    });
+  });
+});
+
+// remove rose color (warning) and invalid text when input is clicked
+inputsJoinCommunity.forEach((input) => {
+  input.addEventListener("click", () => {
+    if (input.classList.contains("text-rose-600")) {
+      input.classList.remove("text-rose-600", "border-rose-600");
+      input.classList.add("text-black", "border-white");
+      input.value = "";
     }
   });
 });
 
-// display and remove drop-down menu
+// remove rose color (warning) and invalid text when any key is pressed
+inputsJoinCommunity.forEach((input) => {
+  input.addEventListener("keydown", () => {
+    if (input.classList.contains("text-rose-600")) {
+      input.classList.remove("text-rose-600", "border-rose-600");
+      input.classList.add("text-black", "border-white");
+      input.value = "";
+    }
+  });
+});
+
+/* Drop-down menu: */
 const header = document.querySelector("header");
 const buttonMenu = document.querySelector("#button-menu");
 const logoProTech = document.querySelector("#logo-pro-tech");
