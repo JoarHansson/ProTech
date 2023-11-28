@@ -1959,6 +1959,22 @@ video {
   background-image: url('/assets/testimonials-card-bg.png');
 }
 
+.bg-\[url\(\'assets\/herobild-mobil\.png\'\)\] {
+  background-image: url('assets/herobild-mobil.png');
+}
+
+.bg-\[url\(\'assets\/bg-norrsken-mobile\.png\'\)\] {
+  background-image: url('assets/bg-norrsken-mobile.png');
+}
+
+.bg-\[url\(\'assets\/botten-berg\.png\'\)\] {
+  background-image: url('assets/botten-berg.png');
+}
+
+.bg-\[url\(\'assets\/testimonials-card-bg\.png\'\)\] {
+  background-image: url('assets/testimonials-card-bg.png');
+}
+
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;

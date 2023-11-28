@@ -75,9 +75,9 @@ const logoBear = document.querySelector("#logo-bear");
 buttonMenu.addEventListener("click", (event) => {
   if (event.target.src.includes("assets/icon-hamburger-menu.png")) {
     // change icon and logo colors
-    event.target.src = "/assets/icon-X-black.png";
-    logoProTech.src = "/assets/logo-PT-black.png";
-    logoBear.src = "/assets/logo-bear-black.png";
+    event.target.src = "assets/icon-X-black.png";
+    logoProTech.src = "assets/logo-PT-black.png";
+    logoBear.src = "assets/logo-bear-black.png";
 
     // disable scrolling of the background
     document.body.classList.add("overflow-hidden");
@@ -117,7 +117,7 @@ buttonMenu.addEventListener("click", (event) => {
       listItemText.textContent = item;
       listItemText.classList.add("text-black", "text-2xl", "font-normal");
 
-      listItemIconArrow.src = "/assets/icon_sharp-arrow-right-black.png";
+      listItemIconArrow.src = "assets/icon_sharp-arrow-right-black.png";
 
       containerTextAndIcon.appendChild(listItemText);
       containerTextAndIcon.appendChild(listItemIconArrow);
@@ -139,9 +139,9 @@ buttonMenu.addEventListener("click", (event) => {
     header.appendChild(list);
   } else if (event.target.src.includes("assets/icon-X-black.png")) {
     // change icon and logo colors
-    event.target.src = "/assets/icon-hamburger-menu.png";
-    logoProTech.src = "/assets/logo-PT-white.png";
-    logoBear.src = "/assets/logo-bear-white.png";
+    event.target.src = "assets/icon-hamburger-menu.png";
+    logoProTech.src = "assets/logo-PT-white.png";
+    logoBear.src = "assets/logo-bear-white.png";
 
     // enable scrolling again
     document.body.classList.remove("overflow-hidden");
