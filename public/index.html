@@ -15,7 +15,7 @@
   <body>
     <!-- landing page section:  -->
     <section
-      class="w-full bg-[url('/assets/herobild-mobil.png')] bg-cover bg-center">
+      class="w-full bg-[url('../assets/herobild-mobil.png')] bg-cover bg-center">
       <!-- logo and navbar: -->
       <header class="px-4 pt-8">
         <div class="flex flex-row justify-between text-white">
@@ -32,7 +32,10 @@
 
           <!-- small screens, hamburger menu: -->
           <button class="md:hidden">
-            <img id="button-menu" src="../assets/icon-hamburger-menu.png" />
+            <img
+              class="focus:outline-none"
+              id="button-menu"
+              src="../assets/icon-hamburger-menu.png" />
           </button>
           <!-- medium screens and up - named navbar items: -->
           <nav class="hidden md:flex md:flex-row md:gap-6 md:text-2xl">
@@ -67,7 +70,7 @@
           <button
             type="submit"
             for="input"
-            class="button-join-community mx-auto rounded-md bg-white bg-opacity-40 px-4 py-2 font-IBM text-2xl font-medium uppercase text-white md:text-4xl">
+            class="button-join-community mx-auto rounded-md bg-white bg-opacity-40 px-4 py-2 font-IBM text-2xl font-medium uppercase text-white focus:outline-none md:text-4xl">
             GÅ MED I COMMUNITY
           </button>
         </form>
@@ -75,7 +78,7 @@
           <img src="../assets/icon-globe.png" alt="" />
           <button
             id="button-switch-language"
-            class="font-IBM text-base font-semibold uppercase leading-snug tracking-wide text-white">
+            class="font-IBM text-base font-semibold uppercase leading-snug tracking-wide text-white focus:outline-none">
             SWE
           </button>
           <img src="../assets/icon_sharp-arrow-drop-down-white.png" alt="" />
@@ -438,7 +441,7 @@
           <button
             type="submit"
             for="input"
-            class="button-join-community mx-auto rounded-md bg-white bg-opacity-40 px-4 py-2 font-IBM text-2xl font-medium uppercase text-white md:text-4xl">
+            class="button-join-community mx-auto rounded-md bg-white bg-opacity-40 px-4 py-2 font-IBM text-2xl font-medium uppercase text-white focus:outline-none md:text-4xl">
             GÅ MED I COMMUNITY
           </button>
         </form>
