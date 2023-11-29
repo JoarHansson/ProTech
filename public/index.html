@@ -17,17 +17,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <!-- <style>
-      .swiper-pagination-bullet-active {
-        background: rgb(6 78 59) !important;
-      }
-    </style> -->
-
     <!-- Swiper JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
       defer></script>
-    <script src="swiper-script-js" defer></script>
+    <script src="swiper-script.js" defer></script>
   </head>
   <body>
     <!-- landing page section:  -->
@@ -137,7 +131,7 @@
     <main class="bg-gradient-custom">
       <!-- collection section: -->
       <section
-        class="flex flex-col items-center gap-8 px-8 py-24 md:mx-auto md:max-w-[90rem] md:flex-row-reverse md:flex-wrap md:items-center md:justify-between md:px-24">
+        class="flex flex-col items-center gap-8 px-8 py-24 md:mx-auto md:max-w-[90rem] md:flex-row-reverse md:items-center md:justify-between md:px-24">
         <!-- image: -->
         <img
           class="block md:hidden"
@@ -183,9 +177,142 @@
         </div>
       </section>
 
-      <!-- product section: -->
+      <!-- product section desktop: -->
       <section
-        class="m-auto flex flex-col items-center gap-8 bg-[url('assets/bg-norrsken-mobile.png')] bg-cover bg-top bg-no-repeat px-8 py-24 md:items-center md:px-0">
+        class="m-auto hidden flex-col items-center gap-8 bg-[url('assets/bg-norrsken-desktop.png')] bg-[length:100%_100%] bg-center bg-no-repeat py-24 md:flex">
+        <!--products - desktop version with swiper:-->
+        <div class="swiper swiper-products-desktop relative h-[650px] w-full">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide flex items-center justify-center">
+              <!-- product 1, Ulveld: -->
+              <div
+                class="mx-auto flex max-w-[90rem] flex-row items-center justify-between px-24">
+                <div
+                  class="flex w-full max-w-[700px] flex-shrink-0 snap-start flex-col items-start justify-center gap-4">
+                  <div
+                    class="text-4xl font-bold capitalize leading-10 tracking-wide text-white md:text-8xl">
+                    Ulveld
+                  </div>
+                  <div
+                    class="font-['Oswald'] text-6xl font-bold capitalize leading-[82.88px] tracking-wider text-white">
+                    Eldnära Energigenerator
+                  </div>
+
+                  <div
+                    class="font-IBM text-2xl font-medium capitalize text-proTechOrange md:text-4xl md:font-medium">
+                    Förenar eld och teknik för äventyr i det vilda.
+                  </div>
+                  <div
+                    class="font-IBM text-base font-normal leading-tight text-white md:text-2xl md:font-normal">
+                    Ulveld är en eldstad som inte bara möjliggör matlagning i
+                    naturen utan även genererar elektricitet för att hålla dina
+                    enheter laddade. Denna kombination av eld och teknik
+                    erbjuder en mångsidig lösning för friluftsliv och äventyr.
+                  </div>
+                  <ul
+                    class="list-inside list-disc font-IBM text-base font-normal leading-tight text-white md:block md:text-2xl md:font-normal">
+                    <li>Eldstad med elgenerator och matlagningsyta</li>
+                    <li>USB- och hushållsuttag för anslutning</li>
+                    <li>Bärbar och säker design för friluftsanvändning</li>
+                  </ul>
+                </div>
+                <img
+                  src="assets/ulveld_v2.png"
+                  alt="Product"
+                  class="h-[500px] w-[500px]" />
+              </div>
+            </div>
+
+            <div class="swiper-slide flex items-center justify-center">
+              <!-- product 2, Korpöga: -->
+              <div
+                class="mx-auto flex max-w-[90rem] flex-row items-center justify-between px-24">
+                <div
+                  class="flex w-full max-w-[700px] flex-shrink-0 snap-start flex-col items-start justify-center gap-4">
+                  <div
+                    class="text-4xl font-bold capitalize leading-10 tracking-wide text-white md:text-8xl">
+                    Korpöga
+                  </div>
+                  <div
+                    class="font-['Oswald'] text-6xl font-bold capitalize leading-[82.88px] tracking-wider text-white">
+                    Mobil Extender
+                  </div>
+
+                  <div
+                    class="font-IBM text-2xl font-medium capitalize text-proTechOrange md:text-4xl md:font-medium">
+                    Utforska avlägsna platser med säker anslutning
+                  </div>
+                  <div
+                    class="font-IBM text-base font-normal leading-tight text-white md:text-2xl md:font-normal">
+                    Korpöga är en mobildataextender som säkerställer en stabil
+                    anslutning även i de mest avlägsna områdena. Den innehåller
+                    också en integrerad GPS-säkerhetsfunktion för att garantera
+                    din trygghet under utforskningen.
+                  </div>
+                  <ul
+                    class="list-inside list-disc font-IBM text-base font-normal leading-tight text-white md:block md:text-2xl md:font-normal">
+                    <li>Mobildataextender för avlägsna områden</li>
+                    <li>Integrerad GPS-säkerhetsfunktion</li>
+                    <li>Robust design för nordiska förhållanden</li>
+                  </ul>
+                </div>
+                <img
+                  src="assets/korpoga_blue_v2.png"
+                  alt="Product"
+                  class="h-[500px] w-[500px]" />
+              </div>
+            </div>
+            <div class="swiper-slide flex items-center justify-center">
+              <!-- product 3, Björnstyrka: -->
+              <div
+                class="mx-auto flex max-w-[90rem] flex-row items-center justify-between px-24">
+                <div
+                  class="flex w-full max-w-[700px] flex-shrink-0 snap-start flex-col items-start justify-center gap-4">
+                  <div
+                    class="text-4xl font-bold capitalize leading-10 tracking-wide text-white md:text-8xl">
+                    Björnstyrka
+                  </div>
+                  <div
+                    class="font-['Oswald'] text-6xl font-bold capitalize leading-[82.88px] tracking-wider text-white">
+                    Batteripack Energihubb
+                  </div>
+
+                  <div
+                    class="font-IBM text-2xl font-medium capitalize text-proTechOrange md:text-4xl md:font-medium">
+                    Kraft och pålitlighet för äventyr utan gränser
+                  </div>
+                  <div
+                    class="font-IBM text-base font-normal leading-tight text-white md:text-2xl md:font-normal">
+                    Björnstyrka, ett robust batteripack med imponerande
+                    kapacitet, standard USB- och hushållsuttag, inbyggd
+                    LED-lampa för extra utomhusbelysning, intelligent
+                    temperaturreglering för enhetsskydd – din pålitliga
+                    följeslagare för äventyr i naturen.
+                  </div>
+                  <ul
+                    class="list-inside list-disc font-IBM text-base font-normal leading-tight text-white md:block md:text-2xl md:font-normal">
+                    <li>Stort batteripack med imponerande kapacitet</li>
+                    <li>LED-lampa för extra belysning</li>
+                    <li>Bärbar design för ryggsäcksfäste</li>
+                  </ul>
+                </div>
+                <img
+                  src="assets/bjornstyrka_v2.png"
+                  alt="Product"
+                  class="h-[500px] w-[500px]" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div
+            class="swiper-pagination absolute bottom-0 w-full text-center"></div>
+        </div>
+      </section>
+
+      <!-- product section mobile: -->
+      <section
+        class="m-auto flex flex-col items-center gap-8 bg-[url('assets/bg-norrsken-mobile.png')] bg-cover bg-top bg-no-repeat px-8 py-24 md:!hidden">
         <!--products - mobile version with swiper:-->
         <div class="swiper swiper-products-mobile relative h-[750px] w-full">
           <div class="swiper-wrapper">
@@ -437,7 +564,7 @@
 
         <!--testimonials - mobile version with swiper:-->
         <div
-          class="swiper swiper-testimonials-mobile relative h-[500px] w-full">
+          class="swiper swiper-testimonials-mobile relative block h-[500px] w-full md:!hidden">
           <div class="swiper-wrapper">
             <div class="swiper-slide flex items-center justify-center">
               <div
@@ -560,18 +687,24 @@
                   </ul>
                 </div>
               </div>
+            </div>
+          </div>
+          <div
+            class="swiper-pagination absolute bottom-0 w-full text-center"></div>
+        </div>
       </section>
-    <!-- backstory section: -->
-    <section class="flex items-start gap-8 px-8 py-24 md:justify-start md:items-center md:mx-auto md:max-w-[90rem] md:px-24">
-      <div
+
+      <!-- backstory section: -->
+      <section
+        class="flex items-start gap-8 px-8 py-24 md:mx-auto md:max-w-[90rem] md:items-center md:justify-start md:px-24">
+        <div
           class="flex flex-col items-start justify-start gap-8 md:justify-center md:p-4">
           <div
             class="text-4xl font-bold capitalize leading-10 tracking-wide text-white md:text-[64px]">
             Pro-tech
           </div>
           <div
-            class="text-proTechOrange font-IBM text-2xl font-medium capitalize md:text-4xl md:font-medium md:py-4">
-
+            class="font-IBM text-2xl font-medium capitalize text-proTechOrange md:py-4 md:text-4xl md:font-medium">
             Teknik för att omdefiniera äventyret
           </div>
           <div
@@ -593,103 +726,120 @@
             sanna natur.
           </div>
 
-          <img src="assets/polaroid-group.png" alt="polaroids" class="w-full md:hidden">
-        </div>
-          <img src="assets/polaroid_desktop.png" alt="polaroids" class="hidden md:flex">
-    </section>
-  </main>
-    <!-- Footer page -->
-    <section class="w-full bg-[url('assets/berg_footer.png')] md:bg-[url('assets/lastcall_bild.png')] bg-cover bg-center">
-      <!-- Last call text/button -->
-      <div class="md:mx-auto md:max-w-[90rem] md:px-24">
-      <div class="mx-8 flex flex-col items-center gap-12 pt-14">
-        <div
-          class="flex flex-row items-center text-4xl font-bold capitalize leading-10 tracking-wider text-proTechOrange md:text-6xl">
-          Greppa äventyret
           <img
-                src="assets/keps.png"
-                alt="Pro-Tech logo orange" class="hidden md:flex"/>
-        </div>
-        <div
-          class="font-IBM text-base text-center font-normal leading-tight md:pb-16 text-white md:mx-60 md:mb-10 md:text-2xl md:font-medium">
-          Tack för att du kom så här långt! Skriv upp dig för vårt nyhetsbrev och få chansen att bli en 
-          av de första 100 att få en gratis keps vid nästa köp. Få exklusiva erbjudanden och spännande nyheter 
-          direkt i din inkorg. Skriv in din e-postadress nu och bli en del av vårt äventyrskollektiv!
+            src="assets/polaroid-group.png"
+            alt="polaroids"
+            class="w-full md:hidden" />
         </div>
         <img
-                src="assets/keps.png"
-                alt="Pro-Tech logo orange" class="md:hidden pb-10"/>
-      </div>
-      <form class="flex flex-col gap-4 pb-36" onsubmit="return false">
-        <input
-          type="text"
-          name="input"
-          placeholder="example@email.com"
-          class="input-join-community mx-auto rounded-lg border-2 border-white bg-neutral-300 px-4 py-2 font-IBM text-xl font-normal leading-8 text-black focus:outline-none" />
-
-        <button
-          type="submit"
-          for="input"
-          class="button-join-community mx-auto rounded-md bg-white bg-opacity-40 px-4 py-2 font-IBM text-2xl font-medium uppercase text-white md:text-4xl">
-          GÅ MED I COMMUNITY
-        </button>
-      </form>
-    </div>
-            <!-- Footer text -->
-            <footer class="w-full bg-neutral-950 bg-opacity-40">
-              <!-- Address Mobile -->
-              <div class="md:hidden flex flex-row justify-between px-3 py-2">
-                <div class="flex flex-col gap-2 tracking-wider font-IBM">
-                  <div class="font-bold text-white text-base uppercase leading-tight">Adress</div>
-                  <div class="text-white text-xs">
-                    Sjökröksg. 17,<br />
-                    412 53 Göteborg,<br />
-                    Sverige
-                  </div>
-                </div>
-                <!-- Contact Mobile -->
-                <div class="flex flex-col gap-2 tracking-wider font-IBM text-xs">
-                  <div class="font-bold text-white text-base uppercase leading-tight">Kontakta oss</div>
-                <div class="text-white">protech@protech.com</div>
-                <div class="text-white">+46347865993</div>
-                </div>
-              </div>
-              <!-- Protech Footer Logo/text -->
-            <div class="hidden md:flex md:flex-row md:justify-between px-4 py-3 md:mx-auto md:max-w-[90rem] md:px-24">
-              <div class="hidden md:flex flex-col">
-                
-                <div class="justify-left flex flex-row items-center gap-4">
-                  <img
-                    id="logo-pro-tech"
-                    src="assets/logo.png"
-                    alt="Pro-Tech logo text" />
-                  <img
-                    id="logo-bear"
-                    src="assets/logo_bjorn.png"
-                    alt="Pro-Tech logo bear" />
-                </div>
-                <div class="mt-4 font-IBM leading-tight tracking-wider text-sm text-white">
-                  <p>Copyright ©</p>
-                  <p>2023</p>
-                </div>
-              </div>
-              <!-- Contact Desktop -->
-              <div class="hidden md:flex md:flex-col md:gap-1 md:tracking-wider md:text-base font-IBM">
-                <div class="font-bold uppercase text-white">Kontakta oss</div>
-              <div class="text-white">protech@protech.com</div>
-              <div class="text-white">+46347865993</div>
-              </div>
-        <!-- Social Desktop -->
-        <div class="hidden md:flex md:flex-col md:gap-1 md:tracking-wider font-IBM">
-          <div class="font-bold uppercase text-white">Social</div>
-          <a href="#" class="uppercase text-white">Facebook</a>
-          <a href="#" class="uppercase text-white">Instagram</a>
-          <a href="#" class="uppercase text-white">Youtube</a>
-
+          src="assets/polaroid_desktop.png"
+          alt="polaroids"
+          class="hidden md:flex" />
+      </section>
+    </main>
+    <!-- Footer page -->
+    <section
+      class="w-full bg-[url('assets/berg_footer.png')] bg-cover bg-center md:bg-[url('assets/lastcall_bild.png')]">
+      <!-- Last call text/button -->
+      <div class="md:mx-auto md:max-w-[90rem] md:px-24">
+        <div class="mx-8 flex flex-col items-center gap-12 pt-14">
+          <div
+            class="flex flex-row items-center text-4xl font-bold capitalize leading-10 tracking-wider text-proTechOrange md:text-6xl">
+            Greppa äventyret
+            <img
+              src="assets/keps.png"
+              alt="Pro-Tech logo orange"
+              class="hidden md:flex" />
+          </div>
+          <div
+            class="text-center font-IBM text-base font-normal leading-tight text-white md:mx-60 md:mb-10 md:pb-16 md:text-2xl md:font-medium">
+            Tack för att du kom så här långt! Skriv upp dig för vårt nyhetsbrev
+            och få chansen att bli en av de första 100 att få en gratis keps vid
+            nästa köp. Få exklusiva erbjudanden och spännande nyheter direkt i
+            din inkorg. Skriv in din e-postadress nu och bli en del av vårt
+            äventyrskollektiv!
+          </div>
+          <img
+            src="assets/keps.png"
+            alt="Pro-Tech logo orange"
+            class="pb-10 md:hidden" />
         </div>
+        <form class="flex flex-col gap-4 pb-36" onsubmit="return false">
+          <input
+            type="text"
+            name="input"
+            placeholder="example@email.com"
+            class="input-join-community mx-auto rounded-lg border-2 border-white bg-neutral-300 px-4 py-2 font-IBM text-xl font-normal leading-8 text-black focus:outline-none" />
+
+          <button
+            type="submit"
+            for="input"
+            class="button-join-community mx-auto rounded-md bg-white bg-opacity-40 px-4 py-2 font-IBM text-2xl font-medium uppercase text-white md:text-4xl">
+            GÅ MED I COMMUNITY
+          </button>
+        </form>
+      </div>
+      <!-- Footer text -->
+      <footer class="w-full bg-neutral-950 bg-opacity-40">
+        <!-- Address Mobile -->
+        <div class="flex flex-row justify-between px-3 py-2 md:hidden">
+          <div class="flex flex-col gap-2 font-IBM tracking-wider">
+            <div class="text-base font-bold uppercase leading-tight text-white">
+              Adress
+            </div>
+            <div class="text-xs text-white">
+              Sjökröksg. 17,<br />
+              412 53 Göteborg,<br />
+              Sverige
+            </div>
+          </div>
+          <!-- Contact Mobile -->
+          <div class="flex flex-col gap-2 font-IBM text-xs tracking-wider">
+            <div class="text-base font-bold uppercase leading-tight text-white">
+              Kontakta oss
+            </div>
+            <div class="text-white">protech@protech.com</div>
+            <div class="text-white">+46347865993</div>
+          </div>
+        </div>
+        <!-- Protech Footer Logo/text -->
+        <div
+          class="hidden px-4 py-3 md:mx-auto md:flex md:max-w-[90rem] md:flex-row md:justify-between md:px-24">
+          <div class="hidden flex-col md:flex">
+            <div class="justify-left flex flex-row items-center gap-4">
+              <img
+                id="logo-pro-tech"
+                src="assets/logo.png"
+                alt="Pro-Tech logo text" />
+              <img
+                id="logo-bear"
+                src="assets/logo_bjorn.png"
+                alt="Pro-Tech logo bear" />
+            </div>
+            <div
+              class="mt-4 font-IBM text-sm leading-tight tracking-wider text-white">
+              <p>Copyright ©</p>
+              <p>2023</p>
+            </div>
+          </div>
+          <!-- Contact Desktop -->
+          <div
+            class="hidden font-IBM md:flex md:flex-col md:gap-1 md:text-base md:tracking-wider">
+            <div class="font-bold uppercase text-white">Kontakta oss</div>
+            <div class="text-white">protech@protech.com</div>
+            <div class="text-white">+46347865993</div>
+          </div>
+          <!-- Social Desktop -->
+          <div
+            class="hidden font-IBM md:flex md:flex-col md:gap-1 md:tracking-wider">
+            <div class="font-bold uppercase text-white">Social</div>
+            <a href="#" class="uppercase text-white">Facebook</a>
+            <a href="#" class="uppercase text-white">Instagram</a>
+            <a href="#" class="uppercase text-white">Youtube</a>
+          </div>
           <!-- Address Desktop -->
           <div
-            class="hidden md:flex md:flex-col md:text-base md:tracking-wider font-IBM">
+            class="hidden font-IBM md:flex md:flex-col md:text-base md:tracking-wider">
             <div class="font-bold uppercase text-white">Adress</div>
             <div class="text-white">
               Sjökröksgatan 17,<br />
@@ -697,11 +847,8 @@
               Sverige
             </div>
           </div>
-          <div
-            class="swiper-pagination absolute bottom-0 w-full text-center"></div>
         </div>
-      </section>
-
-
+      </footer>
+    </section>
   </body>
 </html>
