@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ProTech</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo-bear-orange.png" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,6 +18,12 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <style>
+      .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background: #de9e36 !important;
+      }
+    </style>
 
     <!-- Swiper JS -->
     <script
@@ -306,6 +314,7 @@
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
           <div
+            id="swiper-pagination-products-desktop"
             class="swiper-pagination absolute bottom-0 w-full text-center"></div>
         </div>
       </section>
@@ -428,6 +437,7 @@
             </div>
           </div>
           <div
+            id="swiper-pagination-products-mobile"
             class="swiper-pagination absolute bottom-0 w-full text-center"></div>
         </div>
       </section>
@@ -690,6 +700,7 @@
             </div>
           </div>
           <div
+            id="swiper-pagination-testimonials-mobile"
             class="swiper-pagination absolute bottom-0 w-full text-center"></div>
         </div>
       </section>

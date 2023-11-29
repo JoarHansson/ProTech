@@ -2041,6 +2041,10 @@ video {
   --tw-content: "this-is-also-valid]-weirdly-enough";
   content: var(--tw-content);
 }
+.swiper-pagination-bullet-active,
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #de9e36 !important;
+}
 .swiper-button-next,
 .swiper-button-prev {
   color: #de9e36 !important;
