@@ -9,13 +9,8 @@
 }
 
 @layer utilities {
-  /* remove horizontal scrollbar on slider */
-  .scrollbar-hide {
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE 10+ */
-  }
-  .scrollbar-hide::-webkit-scrollbar {
-    display: none; /* Safari and Chrome */
+  .swiper-pagination-bullet-active {
+    background: rgb(6 78 59) !important;
   }
 
   .button-join-community {
