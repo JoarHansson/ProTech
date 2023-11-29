@@ -11,22 +11,53 @@
       rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
     <script src="script.js" defer></script>
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- <style>
+      .swiper-pagination-bullet-active {
+        background: rgb(6 78 59) !important;
+      }
+    </style> -->
+
+    <!-- Swiper JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer></script>
+    <script src="swiper-script-js" defer></script>
   </head>
   <body>
     <!-- landing page section:  -->
     <section
-      class="w-full bg-[url('assets/herobild-mobil.png')] bg-cover bg-center">
+      class="w-full bg-[url('assets/herobild-mobil.png')] bg-cover bg-center md:bg-[url('assets/herobild-DESKTOP.png')]">
       <!-- logo and navbar: -->
-      <header class="px-4 pt-8">
+      <header class="px-4 pt-8 md:mx-auto md:max-w-[90rem] md:px-24">
         <div class="flex flex-row justify-between text-white">
           <div class="justify-left flex flex-row items-center gap-4">
+            <!-- protech + bear icons for mobile: -->
             <img
+              class="block md:hidden"
               id="logo-pro-tech"
               src="assets/logo-PT-white.png"
               alt="Pro-Tech logo text" />
             <img
+              class="block md:hidden"
               id="logo-bear"
               src="assets/logo-bear-white.png"
+              alt="Pro-Tech logo bear" />
+            <!-- protech + bear icons for desktop: -->
+            <img
+              class="hidden md:block"
+              id="logo-pro-tech"
+              src="assets/logo-PT-white-DESKTOP.png"
+              alt="Pro-Tech logo text" />
+            <img
+              class="hidden md:block"
+              id="logo-bear"
+              src="assets/logo-bear-white-DESKTOP.png"
               alt="Pro-Tech logo bear" />
           </div>
 
@@ -38,50 +69,66 @@
               src="assets/icon-hamburger-menu.png" />
           </button>
           <!-- medium screens and up - named navbar items: -->
-          <nav class="hidden md:flex md:flex-row md:gap-6 md:text-2xl">
-            <div class="navbar">DISCOVER</div>
-            <div class="navbar">MEMBERS</div>
-            <div class="navbar">SHOP</div>
-            <div class="navbar">CART</div>
+          <nav
+            class="hidden font-IBM font-semibold leading-8 text-white md:flex md:flex-row md:gap-8 md:text-2xl">
+            <div class="navbar">KOLLEKTION</div>
+            <div class="navbar">RECENSIONER</div>
+            <div class="navbar">GALLERI</div>
+            <div class="navbar">OM OSS</div>
           </nav>
         </div>
       </header>
-      <!-- hero -->
+      <!-- language settings for desktop: -->
       <div
-        class="flex flex-col gap-4 px-4 pb-52 pt-36 md:p-36 md:text-left md:text-8xl">
+        class="mx-auto mt-4 hidden max-w-[90rem] flex-row justify-end gap-2 px-24 md:flex">
+        <img src="assets/icon-globe.png" alt="globe icon" />
+        <button
+          class="button-switch-language font-IBM text-base font-semibold uppercase leading-snug tracking-wide text-white focus:outline-none">
+          SWE
+        </button>
+        <img
+          src="assets/icon_sharp-arrow-drop-down-white.png"
+          alt="icon arrow down" />
+      </div>
+      <!-- hero text: -->
+      <div
+        class="flex flex-col gap-4 px-4 pb-52 pt-36 md:mx-auto md:max-w-[90rem] md:gap-8 md:px-24 md:text-left">
         <div
-          class="flex flex-col gap-2 text-5xl font-bold uppercase leading-normal tracking-wide">
+          class="flex flex-col gap-2 text-5xl font-bold uppercase leading-normal tracking-wide md:text-8xl md:leading-tight">
           <h1 class="text-white">Teknik för ditt</h1>
           <h1 class="text-proTechOrange">Nästa äventyr</h1>
           <h1 class="text-white">I naturen</h1>
         </div>
         <h5
-          class="mb-4 max-w-md text-left font-IBM text-base font-normal leading-tight text-white md:text-2xl">
+          class="mb-4 max-w-md text-left font-IBM text-base font-normal leading-tight text-white md:max-w-xl md:text-2xl">
           Skriv in din e-post för att ansluta till vår äventyrscommunity och få
           en gratis keps med ditt första köp från vår nya kollektion!
         </h5>
+        <!-- email sign up: -->
         <form class="flex flex-col gap-4" onsubmit="return false">
           <input
             type="text"
             name="input"
             placeholder="example@email.com"
-            class="input-join-community mx-auto rounded-lg border-2 border-white bg-neutral-300 px-4 py-2 font-IBM text-xl font-normal leading-8 text-black focus:outline-none" />
+            class="input-join-community mx-auto rounded-lg border-2 border-white bg-neutral-300 px-4 py-2 font-IBM text-xl font-normal leading-8 text-black focus:outline-none md:ml-0 md:mr-auto md:w-[40rem] md:text-2xl" />
 
           <button
             type="submit"
             for="input"
-            class="button-join-community mx-auto rounded-md bg-white bg-opacity-40 px-4 py-2 font-IBM text-2xl font-medium uppercase text-white focus:outline-none md:text-4xl">
+            class="button-join-community mx-auto rounded-md bg-white bg-opacity-40 px-4 py-2 font-IBM text-2xl font-medium uppercase text-white focus:outline-none md:ml-0 md:mr-auto md:text-4xl">
             GÅ MED I COMMUNITY
           </button>
         </form>
-        <div class="mx-auto flex flex-row justify-center gap-2">
-          <img src="assets/icon-globe.png" alt="" />
+        <!-- language settings for mobile: -->
+        <div class="mx-auto flex flex-row justify-center gap-2 md:hidden">
+          <img src="assets/icon-globe.png" alt="globe icon" />
           <button
-            id="button-switch-language"
-            class="font-IBM text-base font-semibold uppercase leading-snug tracking-wide text-white focus:outline-none">
+            class="button-switch-language font-IBM text-base font-semibold uppercase leading-snug tracking-wide text-white focus:outline-none">
             SWE
           </button>
-          <img src="assets/icon_sharp-arrow-drop-down-white.png" alt="" />
+          <img
+            src="assets/icon_sharp-arrow-drop-down-white.png"
+            alt="icon arrow down" />
         </div>
       </div>
     </section>
@@ -90,28 +137,36 @@
     <main class="bg-gradient-custom">
       <!-- collection section: -->
       <section
-        class="flex flex-col items-center gap-8 px-8 py-24 md:items-center md:px-0">
-        <!-- image boxes: -->
-        <img src="assets/kollektionen.png" alt="collection" />
+        class="flex flex-col items-center gap-8 px-8 py-24 md:mx-auto md:max-w-[90rem] md:flex-row-reverse md:flex-wrap md:items-center md:justify-between md:px-24">
+        <!-- image: -->
+        <img
+          class="block md:hidden"
+          src="assets/kollektionen.png"
+          alt="collection" />
+        <img
+          class="hidden md:block"
+          src="assets/kollektionen-DESKTOP.png"
+          alt="collection" />
 
-        <!-- text for colletion -->
+        <!-- text for collection -->
         <div
-          class="w-fill flex flex-col items-start justify-start gap-4 md:w-min md:justify-center md:p-4">
+          class="w-fill flex flex-col items-start justify-start gap-4 md:justify-center">
           <div class="flex flex-row gap-8">
             <div
-              class="text-4xl font-bold capitalize leading-10 tracking-wide text-white md:text-8xl">
-              kollektionen
+              class="text-4xl font-bold capitalize leading-10 tracking-wide text-white md:text-7xl">
+              kollektion
             </div>
             <img
+              class="block md:hidden"
               src="assets/logo-bear-orange.png"
               alt="Pro-Tech logo orange" />
           </div>
           <div
-            class="max-w-md font-IBM text-2xl font-medium capitalize text-proTechOrange md:text-4xl md:font-medium">
+            class="max-w-md font-IBM text-2xl font-medium capitalize text-proTechOrange md:text-4xl">
             Nordisk kraft och teknik i symbios för vilda äventyr
           </div>
           <div
-            class="max-w-md font-IBM text-base font-normal leading-tight text-white md:text-2xl md:font-normal">
+            class="max-w-md font-IBM text-base font-normal leading-tight text-white md:max-w-lg md:text-2xl">
             Vår Nordisk Wildtech Kollektion är en hyllning till äventyret och
             den robusta skönheten i nordisk natur. Genom att kombinera kraften
             från naturen med avancerad teknik skapar vi pålitliga följeslagare
@@ -121,134 +176,147 @@
             miljöerna. Utforska vildmarken med tillförsikt och låt våra verktyg
             förverkliga din passion för äventyr.
           </div>
+          <img
+            class="mx-auto mt-8 hidden md:block"
+            src="assets/logo-bear-orange-desktop.png"
+            alt="Pro-Tech logo orange" />
         </div>
       </section>
 
       <!-- product section: -->
       <section
         class="m-auto flex flex-col items-center gap-8 bg-[url('assets/bg-norrsken-mobile.png')] bg-cover bg-top bg-no-repeat px-8 py-24 md:items-center md:px-0">
-        <!-- slides container -->
-        <div
-          class="scrollbar-hide m-auto flex w-[320px;] snap-x snap-mandatory gap-8 overflow-x-auto">
-          <!-- product 1, Ulveld: -->
-          <div
-            class="flex w-full max-w-[320px] flex-shrink-0 snap-start flex-col items-start justify-start gap-4 md:w-min md:justify-center md:p-4">
-            <img
-              src="assets/ulveld.png"
-              alt="Product"
-              class="mx-auto mb-4" />
-            <div class="flex flex-row gap-8">
+        <!--products - mobile version with swiper:-->
+        <div class="swiper swiper-products-mobile relative h-[750px] w-full">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide flex items-center justify-center">
+              <!-- product 1, Ulveld: -->
               <div
-                class="text-4xl font-bold capitalize leading-10 tracking-wide text-white md:text-8xl">
-                Ulveld
+                class="flex w-full max-w-[320px] flex-shrink-0 snap-start flex-col items-start justify-center gap-4 md:w-min md:justify-center md:p-4">
+                <img
+                  src="assets/ulveld_v2.png"
+                  alt="Product"
+                  class="mx-auto mb-4" />
+                <div class="flex flex-row gap-8">
+                  <div
+                    class="text-4xl font-bold capitalize leading-10 tracking-wide text-white md:text-8xl">
+                    Ulveld
+                  </div>
+                  <img
+                    src="assets/logo-bear-orange.png"
+                    alt="Pro-Tech logo orange" />
+                </div>
+                <div
+                  class="font-IBM text-2xl font-medium capitalize text-proTechOrange md:text-4xl md:font-medium">
+                  Förenar eld och teknik för äventyr i det vilda.
+                </div>
+                <div
+                  class="max-w-md font-IBM text-base font-normal leading-tight text-white md:text-2xl md:font-normal">
+                  Ulveld är en eldstad som inte bara möjliggör matlagning i
+                  naturen utan även genererar elektricitet för att hålla dina
+                  enheter laddade. Denna kombination av eld och teknik erbjuder
+                  en mångsidig lösning för friluftsliv och äventyr.
+                </div>
+                <ul
+                  class="hidden max-w-md list-inside list-disc font-IBM text-base font-normal leading-tight text-white md:block md:text-2xl md:font-normal">
+                  <li>Mobildataextender för avlägsna områden</li>
+                  <li>Integrerad GPS-säkerhetsfunktion</li>
+                  <li>Robust design för nordiska förhållanden</li>
+                </ul>
               </div>
-              <img
-                src="assets/logo-bear-orange.png"
-                alt="Pro-Tech logo orange" />
             </div>
-            <div
-              class="font-IBM text-2xl font-medium capitalize text-proTechOrange md:text-4xl md:font-medium">
-              Förenar eld och teknik för äventyr i det vilda.
-            </div>
-            <div
-              class="max-w-md font-IBM text-base font-normal leading-tight text-white md:text-2xl md:font-normal">
-              Ulveld är en eldstad som inte bara möjliggör matlagning i naturen
-              utan även genererar elektricitet för att hålla dina enheter
-              laddade. Denna kombination av eld och teknik erbjuder en mångsidig
-              lösning för friluftsliv och äventyr.
-            </div>
-            <ul
-              class="max-w-md list-inside list-disc font-IBM text-base font-normal leading-tight text-white md:text-2xl md:font-normal">
-              <li>Mobildataextender för avlägsna områden</li>
-              <li>Integrerad GPS-säkerhetsfunktion</li>
-              <li>Robust design för nordiska förhållanden</li>
-            </ul>
-          </div>
-          <!-- product 2, Korpöga: -->
-          <div
-            class="flex w-full max-w-[320px] flex-shrink-0 snap-start flex-col items-start justify-start gap-4 md:w-min md:justify-center md:p-4">
-            <img
-              src="assets/korpoga.png"
-              alt="Product"
-              class="mx-auto mb-4" />
-            <div class="flex flex-row gap-8">
+            <div class="swiper-slide flex items-center justify-center">
+              <!-- product 2, Korpöga: -->
               <div
-                class="text-4xl font-bold capitalize leading-10 tracking-wide text-white md:text-8xl">
-                Korpöga
+                class="flex w-full max-w-[320px] flex-shrink-0 snap-start flex-col items-start justify-start gap-4 md:w-min md:justify-center md:p-4">
+                <img
+                  src="assets/korpoga_blue_v2.png"
+                  alt="Product"
+                  class="mx-auto mb-4" />
+                <div class="flex flex-row gap-8">
+                  <div
+                    class="text-4xl font-bold capitalize leading-10 tracking-wide text-white md:text-8xl">
+                    Korpöga
+                  </div>
+                  <img
+                    src="assets/logo-bear-orange.png"
+                    alt="Pro-Tech logo orange" />
+                </div>
+                <div
+                  class="font-IBM text-2xl font-medium capitalize text-proTechOrange md:text-4xl md:font-medium">
+                  Utforska avlägsna platser med säker anslutning
+                </div>
+                <div
+                  class="max-w-md font-IBM text-base font-normal leading-tight text-white md:text-2xl md:font-normal">
+                  Korpöga är en mobildataextender som säkerställer en stabil
+                  anslutning även i de mest avlägsna områdena. Den innehåller
+                  också en integrerad GPS-säkerhetsfunktion för att garantera
+                  din trygghet under utforskningen.
+                </div>
+                <ul
+                  class="hidden max-w-md list-inside list-disc font-IBM text-base font-normal leading-tight text-white md:block md:text-2xl md:font-normal">
+                  <li>Eldstad med elgenerator och matlagningsyta</li>
+                  <li>USB- och hushållsuttag för anslutning</li>
+                  <li>Bärbar och säker design för friluftsanvändning</li>
+                </ul>
               </div>
-              <img
-                src="assets/logo-bear-orange.png"
-                alt="Pro-Tech logo orange" />
             </div>
-            <div
-              class="font-IBM text-2xl font-medium capitalize text-proTechOrange md:text-4xl md:font-medium">
-              Utforska avlägsna platser med säker anslutning
-            </div>
-            <div
-              class="max-w-md font-IBM text-base font-normal leading-tight text-white md:text-2xl md:font-normal">
-              Korpöga är en mobildataextender som säkerställer en stabil
-              anslutning även i de mest avlägsna områdena. Den innehåller också
-              en integrerad GPS-säkerhetsfunktion för att garantera din trygghet
-              under utforskningen.
-            </div>
-            <ul
-              class="max-w-md list-inside list-disc font-IBM text-base font-normal leading-tight text-white md:text-2xl md:font-normal">
-              <li>Eldstad med elgenerator och matlagningsyta</li>
-              <li>USB- och hushållsuttag för anslutning</li>
-              <li>Bärbar och säker design för friluftsanvändning</li>
-            </ul>
-          </div>
-          <!-- product 3, Björnstyrka: -->
-          <div
-            class="flex w-full max-w-[320px] flex-shrink-0 snap-start flex-col items-start justify-start gap-4 md:w-min md:justify-center md:p-4">
-            <img
-              src="assets/bjornstyrka.png"
-              alt="Product"
-              class="mx-auto mb-4" />
-            <div class="flex flex-row gap-8">
+            <div class="swiper-slide flex items-center justify-center">
+              <!-- product 3, Björnstyrka: -->
               <div
-                class="text-4xl font-bold capitalize leading-10 tracking-wide text-white md:text-8xl">
-                Björnstyrka
+                class="flex w-full max-w-[320px] flex-shrink-0 snap-start flex-col items-start justify-start gap-4 md:w-min md:justify-center md:p-4">
+                <img
+                  src="assets/bjornstyrka_v2.png"
+                  alt="Product"
+                  class="mx-auto mb-4" />
+                <div class="flex flex-row gap-8">
+                  <div
+                    class="text-4xl font-bold capitalize leading-10 tracking-wide text-white md:text-8xl">
+                    Björnstyrka
+                  </div>
+                  <img
+                    src="assets/logo-bear-orange.png"
+                    alt="Pro-Tech logo orange" />
+                </div>
+                <div
+                  class="font-IBM text-2xl font-medium capitalize text-proTechOrange md:text-4xl md:font-medium">
+                  Kraft och pålitlighet för äventyr utan gränser
+                </div>
+                <div
+                  class="max-w-md font-IBM text-base font-normal leading-tight text-white md:text-2xl md:font-normal">
+                  Björnstyrka, ett robust batteripack med imponerande kapacitet,
+                  standard USB- och hushållsuttag, inbyggd LED-lampa för extra
+                  utomhusbelysning, intelligent temperaturreglering för
+                  enhetsskydd – din pålitliga följeslagare för äventyr i
+                  naturen.
+                </div>
+                <ul
+                  class="hidden max-w-md list-inside list-disc font-IBM text-base font-normal leading-tight text-white md:block md:text-2xl md:font-normal">
+                  <li>Stort batteripack med imponerande kapacitet</li>
+                  <li>LED-lampa för extra belysning</li>
+                  <li>Bärbar design för ryggsäcksfäste</li>
+                  <li>Intelligent temperaturreglering för enhetsskydd</li>
+                </ul>
               </div>
-              <img
-                src="assets/logo-bear-orange.png"
-                alt="Pro-Tech logo orange" />
             </div>
-            <div
-              class="font-IBM text-2xl font-medium capitalize text-proTechOrange md:text-4xl md:font-medium">
-              Kraft och pålitlighet för äventyr utan gränser
-            </div>
-            <div
-              class="max-w-md font-IBM text-base font-normal leading-tight text-white md:text-2xl md:font-normal">
-              Björnstyrka, ett robust batteripack med imponerande kapacitet,
-              standard USB- och hushållsuttag, inbyggd LED-lampa för extra
-              utomhusbelysning, intelligent temperaturreglering för enhetsskydd
-              – din pålitliga följeslagare för äventyr i naturen.
-            </div>
-            <ul
-              class="max-w-md list-inside list-disc font-IBM text-base font-normal leading-tight text-white md:text-2xl md:font-normal">
-              <li>Stort batteripack med imponerande kapacitet</li>
-              <li>LED-lampa för extra belysning</li>
-              <li>Bärbar design för ryggsäcksfäste</li>
-              <li>Intelligent temperaturreglering för enhetsskydd</li>
-            </ul>
           </div>
+          <div
+            class="swiper-pagination absolute bottom-0 w-full text-center"></div>
         </div>
       </section>
 
       <!-- testimonials section: -->
-      <section class="mx-4 my-16 flex flex-col">
+      <section
+        class="mx-4 my-16 flex flex-col md:mx-auto md:max-w-[90rem] md:px-24">
         <div
-          class="mb-8 text-center font-IBM text-2xl font-medium capitalize leading-8 text-proTechOrange">
+          class="mb-8 text-center font-IBM text-2xl font-medium capitalize leading-8 text-proTechOrange md:font-sans md:text-7xl">
           Recensioner Från vårt community
         </div>
 
-        <!-- slides container -->
-        <div
-          class="scrollbar-hide m-auto flex w-[320px;] snap-x snap-mandatory gap-8 overflow-x-auto">
-          <!-- card 1: -->
+        <!-- testimonials - desktop view, side by side: -->
+        <div class="hidden flex-row flex-wrap justify-between md:flex">
           <div
-            class="mx-auto flex h-[450px] w-full max-w-[320px] flex-shrink-0 snap-start flex-col justify-between rounded-lg bg-[url('assets/testimonials-card-bg.png')] bg-cover p-4">
+            class="flex-shrink-1 mx-0 flex h-[450px] w-full max-w-[320px] flex-col justify-between rounded-lg bg-[url('assets/testimonials-card-bg.png')] bg-cover p-4">
             <div class="flex flex-row items-start justify-between">
               <img
                 src="assets/testimonials-person-1.png"
@@ -287,7 +355,7 @@
           </div>
           <!-- card 2: -->
           <div
-            class="mx-auto flex h-[450px] w-full max-w-[320px] flex-shrink-0 snap-start flex-col justify-between rounded-lg bg-[url('assets/testimonials-card-bg.png')] bg-cover p-4">
+            class="flex-shrink-1 mx-0 flex h-[450px] w-full max-w-[320px] flex-col justify-between rounded-lg bg-[url('assets/testimonials-card-bg.png')] bg-cover p-4">
             <div class="flex flex-row items-start justify-between">
               <img
                 src="assets/testimonials-person-2.png"
@@ -327,7 +395,7 @@
           </div>
           <!-- card 3: -->
           <div
-            class="mx-auto flex h-[450px] w-full max-w-[320px] flex-shrink-0 snap-start flex-col justify-between rounded-lg bg-[url('assets/testimonials-card-bg.png')] bg-cover p-4">
+            class="flex-shrink-1 mx-0 flex h-[450px] w-full max-w-[320px] flex-col justify-between rounded-lg bg-[url('assets/testimonials-card-bg.png')] bg-cover p-4">
             <div class="flex flex-row items-start justify-between">
               <img
                 src="assets/testimonials-person-3.png"
@@ -366,6 +434,132 @@
             </div>
           </div>
         </div>
+
+        <!--testimonials - mobile version with swiper:-->
+        <div
+          class="swiper swiper-testimonials-mobile relative h-[500px] w-full">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide flex items-center justify-center">
+              <div
+                class="mx-auto flex h-[450px] w-full max-w-[320px] flex-shrink-0 snap-start flex-col justify-between rounded-lg bg-[url('assets/testimonials-card-bg.png')] bg-cover p-4">
+                <div class="flex flex-row items-start justify-between">
+                  <img
+                    src="assets/testimonials-person-1.png"
+                    alt="Pro-Tech exclusive member Sture" />
+                  <img src="assets/logo-bear-white.png" alt="" />
+                </div>
+                <div
+                  class="font-IBM text-base font-normal leading-tight text-white">
+                  “Fantastiska teknikprodukter för friluftslivet! Jag är
+                  imponerad av den höga kvaliteten och innovationen i varje
+                  produkt jag köpt från dem. Deras batteripack har verkligen
+                  förlängt mina äventyr och nätverksutökaren har hållit mig
+                  uppkopplad även på avlägsna platser.”
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                  <div
+                    class="font-IBM text-base font-normal leading-tight text-proTechOrange">
+                    Sture Svensson
+                  </div>
+                  <ul class="mx-auto flex flex-row gap-2">
+                    <li>
+                      <img src="assets/star-orange.svg" alt="Orange star" />
+                    </li>
+                    <li>
+                      <img src="assets/star-orange.svg" alt="Orange star" />
+                    </li>
+                    <li>
+                      <img src="assets/star-orange.svg" alt="Orange star" />
+                    </li>
+                    <li>
+                      <img src="assets/star-orange.svg" alt="Orange star" />
+                    </li>
+                    <li><img src="assets/star-grey.svg" alt="Grey star" /></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide flex items-center justify-center">
+              <div
+                class="mx-auto flex h-[450px] w-full max-w-[320px] flex-shrink-0 snap-start flex-col justify-between rounded-lg bg-[url('assets/testimonials-card-bg.png')] bg-cover p-4">
+                <div class="flex flex-row items-start justify-between">
+                  <img
+                    src="assets/testimonials-person-2.png"
+                    alt="Pro-Tech exclusive member Marie" />
+                  <img src="assets/logo-bear-white.png" alt="" />
+                </div>
+                <div
+                  class="font-IBM text-base font-normal leading-tight text-white">
+                  "Eldstad som genererar el – vilken genialisk idé! Jag älskar
+                  hur deras produkter inte bara gör campinglivet bekvämare utan
+                  även mer miljövänligt. Utmärkt kundservice och snabb leverans,
+                  jag rekommenderar dem starkt till alla friluftsälskare."
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                  <div
+                    class="font-IBM text-base font-normal leading-tight text-proTechOrange">
+                    Marie Månsson
+                  </div>
+                  <ul class="mx-auto flex flex-row gap-2">
+                    <li>
+                      <img src="assets/star-orange.svg" alt="Orange star" />
+                    </li>
+                    <li>
+                      <img src="assets/star-orange.svg" alt="Orange star" />
+                    </li>
+                    <li>
+                      <img src="assets/star-orange.svg" alt="Orange star" />
+                    </li>
+                    <li>
+                      <img src="assets/star-grey.svg" alt="Grey star" />
+                    </li>
+                    <li>
+                      <img src="assets/star-grey.svg" alt="Grey star" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide flex items-center justify-center">
+              <div
+                class="mx-auto flex h-[450px] w-full max-w-[320px] flex-shrink-0 snap-start flex-col justify-between rounded-lg bg-[url('assets/testimonials-card-bg.png')] bg-cover p-4">
+                <div class="flex flex-row items-start justify-between">
+                  <img
+                    src="assets/testimonials-person-3.png"
+                    alt="Pro-Tech exclusive member Kalle" />
+                  <img src="assets/logo-bear-white.png" alt="" />
+                </div>
+                <div
+                  class="font-IBM text-base font-normal leading-tight text-white">
+                  "Enastående företag med ett sortiment som verkligen förbättrar
+                  friluftsäventyr! Deras stora batteripack har gett mig
+                  tillräckligt med energi för flerdagars vandringar och
+                  nätverksutökaren har varit ovärderlig"
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                  <div
+                    class="font-IBM text-base font-normal leading-tight text-proTechOrange">
+                    Kalle Karlsson
+                  </div>
+                  <ul class="mx-auto flex flex-row gap-2">
+                    <li>
+                      <img src="assets/star-orange.svg" alt="Orange star" />
+                    </li>
+                    <li>
+                      <img src="assets/star-orange.svg" alt="Orange star" />
+                    </li>
+                    <li>
+                      <img src="assets/star-orange.svg" alt="Orange star" />
+                    </li>
+                    <li>
+                      <img src="assets/star-orange.svg" alt="Orange star" />
+                    </li>
+                    <li>
+                      <img src="assets/star-orange.svg" alt="Orange star" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
       </section>
     <!-- backstory section: -->
     <section class="flex items-start gap-8 px-8 py-24 md:justify-start md:items-center md:mx-auto md:max-w-[90rem] md:px-24">
@@ -503,8 +697,11 @@
               Sverige
             </div>
           </div>
+          <div
+            class="swiper-pagination absolute bottom-0 w-full text-center"></div>
         </div>
-      </footer>
-    </section>
+      </section>
+
+
   </body>
 </html>

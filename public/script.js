@@ -1,13 +1,17 @@
 /* Language button: */
-const buttonSwitchLanguage = document.querySelector("#button-switch-language");
+const buttonsSwitchLanguage = document.querySelectorAll(
+  ".button-switch-language",
+);
 
 // change from SWE to ENG and vice versa
-buttonSwitchLanguage.addEventListener("click", () => {
-  if (buttonSwitchLanguage.innerText == "SWE") {
-    buttonSwitchLanguage.innerText = "ENG";
-  } else if (buttonSwitchLanguage.innerText == "ENG") {
-    buttonSwitchLanguage.innerText = "SWE";
-  }
+buttonsSwitchLanguage.forEach((button) => {
+  button.addEventListener("click", () => {
+    if (button.innerText == "SWE") {
+      button.innerText = "ENG";
+    } else if (button.innerText == "ENG") {
+      button.innerText = "SWE";
+    }
+  });
 });
 
 /* Sign up-form: */
@@ -97,7 +101,7 @@ buttonMenu.addEventListener("click", (event) => {
     const list = document.createElement("ul");
     list.classList.add("mt-10");
 
-    const menuItems = ["Upptäck", "Medlem", "Butik", "Kontakt"];
+    const menuItems = ["KOLLEKTION", "RECENSIONER", "GALLERI", "OM OSS"];
 
     // populate drop-down menu
     menuItems.forEach((item) => {

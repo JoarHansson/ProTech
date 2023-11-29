@@ -1,0 +1,11 @@
+const swiperTestimonialsMobile = new Swiper(".swiper-testimonials-mobile", {
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
+
+const swiperProductsMobile = new Swiper(".swiper-products-mobile", {
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
