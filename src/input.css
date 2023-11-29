@@ -13,6 +13,10 @@
     background: #de9e36 !important;
   }
 
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #de9e36 !important;
+  }
+
   .swiper-button-next,
   .swiper-button-prev {
     color: #de9e36 !important;

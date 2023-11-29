@@ -319,7 +319,7 @@
             <div class="swiper-slide flex items-center justify-center">
               <!-- product 1, Ulveld: -->
               <div
-                class="flex w-full max-w-[320px] flex-shrink-0 snap-start flex-col items-start justify-center gap-4 md:w-min md:justify-center md:p-4">
+                class="mx-auto flex w-full max-w-[320px] flex-shrink-0 snap-start flex-col items-start justify-center gap-4 md:w-min md:justify-center md:p-4">
                 <img
                   src="assets/ulveld_v2.png"
                   alt="Product"
@@ -355,7 +355,7 @@
             <div class="swiper-slide flex items-center justify-center">
               <!-- product 2, Korpöga: -->
               <div
-                class="flex w-full max-w-[320px] flex-shrink-0 snap-start flex-col items-start justify-start gap-4 md:w-min md:justify-center md:p-4">
+                class="mx-auto flex w-full max-w-[320px] flex-shrink-0 snap-start flex-col items-start justify-start gap-4 md:w-min md:justify-center md:p-4">
                 <img
                   src="assets/korpoga_blue_v2.png"
                   alt="Product"
@@ -391,7 +391,7 @@
             <div class="swiper-slide flex items-center justify-center">
               <!-- product 3, Björnstyrka: -->
               <div
-                class="flex w-full max-w-[320px] flex-shrink-0 snap-start flex-col items-start justify-start gap-4 md:w-min md:justify-center md:p-4">
+                class="mx-auto flex w-full max-w-[320px] flex-shrink-0 snap-start flex-col items-start justify-start gap-4 md:w-min md:justify-center md:p-4">
                 <img
                   src="assets/bjornstyrka_v2.png"
                   alt="Product"
@@ -725,176 +725,128 @@
             vis göra varje steg ut i det okända till en hyllning till äventyrets
             sanna natur.
           </div>
-          
-          <img src="assets/polaroid_mobile.png" alt="polaroids" class="md:hidden w-full">
+
+          <img
+            src="assets/polaroid_mobile.png"
+            alt="polaroids"
+            class="w-full md:hidden" />
         </div>
-          <img src="assets/polaroid_desktop.png" alt="polaroids" class="hidden md:flex">
-    </section>
-    <!-- Footer page -->
-    <section class="w-full bg-[url('assets/bergfooter_nobg.png')] md:bg-[url('assets/lastcall_nobg.png')] bg-cover bg-center">
-      <!-- Last call text/button -->
-      <div class="md:mx-auto md:max-w-[90rem] md:px-24">
-        <div class="mx-8 flex flex-col items-center gap-12 pt-14">
-          <div
-            class="flex flex-row items-center text-4xl font-bold capitalize leading-10 tracking-wider text-proTechOrange md:text-6xl">
-            Greppa äventyret
+        <img
+          src="assets/polaroid_desktop.png"
+          alt="polaroids"
+          class="hidden md:flex" />
+      </section>
+      <!-- Footer page -->
+      <section
+        class="w-full bg-[url('assets/bergfooter_nobg.png')] bg-cover bg-center md:bg-[url('assets/lastcall_nobg.png')]">
+        <!-- Last call text/button -->
+        <div class="md:mx-auto md:max-w-[90rem] md:px-24">
+          <div class="mx-8 flex flex-col items-center gap-12 pt-14">
+            <div
+              class="flex flex-row items-center text-4xl font-bold capitalize leading-10 tracking-wider text-proTechOrange md:text-6xl">
+              Greppa äventyret
+              <img
+                src="assets/keps.png"
+                alt="Pro-Tech logo orange"
+                class="hidden md:flex" />
+            </div>
+            <div
+              class="text-center font-IBM text-base font-normal leading-tight text-white md:mx-60 md:mb-10 md:pb-16 md:text-2xl md:font-medium">
+              Tack för att du kom så här långt! Skriv upp dig för vårt
+              nyhetsbrev och få chansen att bli en av de första 100 att få en
+              gratis keps vid nästa köp. Få exklusiva erbjudanden och spännande
+              nyheter direkt i din inkorg. Skriv in din e-postadress nu och bli
+              en del av vårt äventyrskollektiv!
+            </div>
             <img
               src="assets/keps.png"
               alt="Pro-Tech logo orange"
-              class="hidden md:flex" />
+              class="pb-10 md:hidden" />
           </div>
-          <div
-            class="text-center font-IBM text-base font-normal leading-tight text-white md:mx-60 md:mb-10 md:pb-16 md:text-2xl md:font-medium">
-            Tack för att du kom så här långt! Skriv upp dig för vårt nyhetsbrev
-            och få chansen att bli en av de första 100 att få en gratis keps vid
-            nästa köp. Få exklusiva erbjudanden och spännande nyheter direkt i
-            din inkorg. Skriv in din e-postadress nu och bli en del av vårt
-            äventyrskollektiv!
-          </div>
-        <img
-                src="assets/keps.png"
-                alt="Pro-Tech logo orange" class="md:hidden pb-10"/>
-      </div>
-      <form class="flex flex-col gap-4 pb-36" onsubmit="return false">
-        <input
-          type="text"
-          name="input"
-          placeholder="example@email.com"
-          class="input-join-community mx-auto rounded-lg border-2 border-white bg-neutral-300 px-4 py-2 font-IBM text-xl font-normal leading-8 text-black focus:outline-none" />
+          <form class="flex flex-col gap-4 pb-36" onsubmit="return false">
+            <input
+              type="text"
+              name="input"
+              placeholder="example@email.com"
+              class="input-join-community mx-auto rounded-lg border-2 border-white bg-neutral-300 px-4 py-2 font-IBM text-xl font-normal leading-8 text-black focus:outline-none" />
 
-        <button
-          type="submit"
-          for="input"
-          class="button-join-community mx-auto rounded-md bg-white bg-opacity-40 px-4 py-2 font-IBM text-2xl font-medium uppercase text-white md:text-4xl">
-          GÅ MED I COMMUNITY
-        </button>
-      </form>
-    </div>
-            <!-- Footer text -->
-            <footer class="w-full bg-neutral-950 bg-opacity-40">
-              <!-- Address Mobile -->
-              <div class="md:hidden flex flex-row justify-between px-3 py-2">
-                <div class="flex flex-col gap-2 tracking-wider font-IBM">
-                  <div class="font-bold text-white text-base uppercase leading-tight">Adress</div>
-                  <div class="text-white text-xs">
-                    Sjökröksg. 17,<br />
-                    412 53 Göteborg,<br />
-                    Sverige
-                  </div>
-                </div>
-                <!-- Contact Mobile -->
-                <div class="flex flex-col gap-2 tracking-wider font-IBM text-xs">
-                  <div class="font-bold text-white text-base uppercase leading-tight">Kontakta oss</div>
-                <div class="text-white">protech@protech.com</div>
-                <div class="text-white">+46347865993</div>
-                </div>
+            <button
+              type="submit"
+              for="input"
+              class="button-join-community mx-auto rounded-md bg-white bg-opacity-40 px-4 py-2 font-IBM text-2xl font-medium uppercase text-white md:text-4xl">
+              GÅ MED I COMMUNITY
+            </button>
+          </form>
+        </div>
+        <!-- Footer text -->
+        <footer class="w-full bg-neutral-950 bg-opacity-40">
+          <!-- Address Mobile -->
+          <div class="flex flex-row justify-between px-3 py-2 md:hidden">
+            <div class="flex flex-col gap-2 font-IBM tracking-wider">
+              <div
+                class="text-base font-bold uppercase leading-tight text-white">
+                Adress
               </div>
-              <!-- Protech Footer Logo/text -->
-            <div class="hidden md:flex md:flex-row md:justify-between px-4 py-3 md:mx-auto md:max-w-[90rem] md:px-24">
-              <div class="hidden md:flex flex-col">
-                
-                <div class="justify-left flex flex-row items-center gap-4">
-                  <img
-                    id="logo-pro-tech"
-                    src="assets/logo-PT-white-DESKTOP.png"
-                    alt="Pro-Tech logo text" />
-                  <img
-                    id="logo-bear"
-                    src="assets/logo-bear-white-DESKTOP.png"
-                    alt="Pro-Tech logo bear" />
-                </div>
-                <div class="mt-4 font-IBM leading-tight tracking-wider text-sm text-white">
-                  <p>Copyright ©</p>
-                  <p>2023</p>
-                </div>
+              <div class="text-xs text-white">
+                Sjökröksg. 17,<br />
+                412 53 Göteborg,<br />
+                Sverige
               </div>
-              <!-- Contact Desktop -->
-              <div class="hidden md:flex md:flex-col md:gap-1 md:tracking-wider md:text-base font-IBM">
-                <div class="font-bold uppercase text-white">Kontakta oss</div>
+            </div>
+            <!-- Contact Mobile -->
+            <div class="flex flex-col gap-2 font-IBM text-xs tracking-wider">
+              <div
+                class="text-base font-bold uppercase leading-tight text-white">
+                Kontakta oss
+              </div>
               <div class="text-white">protech@protech.com</div>
               <div class="text-white">+46347865993</div>
+            </div>
+          </div>
+          <!-- Protech Footer Logo/text -->
+          <div
+            class="hidden px-4 py-3 md:mx-auto md:flex md:max-w-[90rem] md:flex-row md:justify-between md:px-24">
+            <div class="hidden flex-col md:flex">
+              <div class="justify-left flex flex-row items-center gap-4">
+                <img
+                  id="logo-pro-tech"
+                  src="assets/logo.png"
+                  alt="Pro-Tech logo text" />
+                <img
+                  id="logo-bear"
+                  src="assets/logo_bjorn.png"
+                  alt="Pro-Tech logo bear" />
               </div>
-        <!-- Social Desktop -->
-        <div class="hidden md:flex md:flex-col md:gap-1 md:tracking-wider font-IBM">
-          <div class="font-bold uppercase text-white">Social</div>
-          <a href="#" class="uppercase text-white">Facebook</a>
-          <a href="#" class="uppercase text-white">Instagram</a>
-          <a href="#" class="uppercase text-white">Youtube</a>
-
-          <button
-            type="submit"
-            for="input"
-            class="button-join-community mx-auto rounded-md bg-white bg-opacity-40 px-4 py-2 font-IBM text-2xl font-medium uppercase text-white md:text-4xl">
-            GÅ MED I COMMUNITY
-          </button>
-        </form>
-      </div>
-      <!-- Footer text -->
-      <footer class="w-full bg-neutral-950 bg-opacity-40">
-        <!-- Address Mobile -->
-        <div class="flex flex-row justify-between px-3 py-2 md:hidden">
-          <div class="flex flex-col gap-2 font-IBM tracking-wider">
-            <div class="text-base font-bold uppercase leading-tight text-white">
-              Adress
+              <div
+                class="mt-4 font-IBM text-sm leading-tight tracking-wider text-white">
+                <p>Copyright ©</p>
+                <p>2023</p>
+              </div>
             </div>
-            <div class="text-xs text-white">
-              Sjökröksg. 17,<br />
-              412 53 Göteborg,<br />
-              Sverige
-            </div>
-          </div>
-          <!-- Contact Mobile -->
-          <div class="flex flex-col gap-2 font-IBM text-xs tracking-wider">
-            <div class="text-base font-bold uppercase leading-tight text-white">
-              Kontakta oss
-            </div>
-            <div class="text-white">protech@protech.com</div>
-            <div class="text-white">+46347865993</div>
-          </div>
-        </div>
-        <!-- Protech Footer Logo/text -->
-        <div
-          class="hidden px-4 py-3 md:mx-auto md:flex md:max-w-[90rem] md:flex-row md:justify-between md:px-24">
-          <div class="hidden flex-col md:flex">
-            <div class="justify-left flex flex-row items-center gap-4">
-              <img
-                id="logo-pro-tech"
-                src="assets/logo.png"
-                alt="Pro-Tech logo text" />
-              <img
-                id="logo-bear"
-                src="assets/logo_bjorn.png"
-                alt="Pro-Tech logo bear" />
-            </div>
+            <!-- Contact Desktop -->
             <div
-              class="mt-4 font-IBM text-sm leading-tight tracking-wider text-white">
-              <p>Copyright ©</p>
-              <p>2023</p>
+              class="hidden font-IBM md:flex md:flex-col md:gap-1 md:text-base md:tracking-wider">
+              <div class="font-bold uppercase text-white">Kontakta oss</div>
+              <div class="text-white">protech@protech.com</div>
+              <div class="text-white">+46347865993</div>
             </div>
-          </div>
-          <!-- Contact Desktop -->
-          <div
-            class="hidden font-IBM md:flex md:flex-col md:gap-1 md:text-base md:tracking-wider">
-            <div class="font-bold uppercase text-white">Kontakta oss</div>
-            <div class="text-white">protech@protech.com</div>
-            <div class="text-white">+46347865993</div>
-          </div>
-          <!-- Social Desktop -->
-          <div
-            class="hidden font-IBM md:flex md:flex-col md:gap-1 md:tracking-wider">
-            <div class="font-bold uppercase text-white">Social</div>
-            <a href="#" class="uppercase text-white">Facebook</a>
-            <a href="#" class="uppercase text-white">Instagram</a>
-            <a href="#" class="uppercase text-white">Youtube</a>
-          </div>
-          <!-- Address Desktop -->
-          <div
-            class="hidden font-IBM md:flex md:flex-col md:text-base md:tracking-wider">
-            <div class="font-bold uppercase text-white">Adress</div>
-            <div class="text-white">
-              Sjökröksgatan 17,<br />
-              412 53 Göteborg,<br />
-              Sverige
+            <!-- Social Desktop -->
+            <div
+              class="hidden font-IBM md:flex md:flex-col md:gap-1 md:tracking-wider">
+              <div class="font-bold uppercase text-white">Social</div>
+              <a href="#" class="uppercase text-white">Facebook</a>
+              <a href="#" class="uppercase text-white">Instagram</a>
+              <a href="#" class="uppercase text-white">Youtube</a>
+            </div>
+            <!-- Address Desktop -->
+            <div
+              class="hidden font-IBM md:flex md:flex-col md:text-base md:tracking-wider">
+              <div class="font-bold uppercase text-white">Adress</div>
+              <div class="text-white">
+                Sjökröksgatan 17,<br />
+                412 53 Göteborg,<br />
+                Sverige
+              </div>
             </div>
           </div>
         </footer>
